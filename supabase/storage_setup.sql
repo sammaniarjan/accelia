@@ -1,0 +1,4 @@
+-- Optioneel — voer dit uit nadat je de bucket "documents" hebt aangemaakt via Supabase UI:
+--   Project → Storage → New bucket → name: documents (private)
+-- Voor MVP staan we lezen/schrijven toe via service role key (server-side). Geen extra policies nodig
+-- omdat onze API alleen draait met SUPABASE_SERVICE_ROLE_KEY.

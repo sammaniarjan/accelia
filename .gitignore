@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env*.local
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# MCP / Skills work-tree (lokale tooling, niet de app zelf)
+.agents
+.mcp.json
+skills-lock.json
