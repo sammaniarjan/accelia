@@ -83,15 +83,17 @@ Vervoer bestaat uit twee delen die je apart moet bekijken:
 
 | Product | Prijs incl. btw en verzending | Omzet ex btw | Geschatte kosten | Marge |
 |---|---|---|---|---|
-| Picual 5L blik | €69,00 | €63,30 | €41,60 (30 inkoop + 2 pallet + 8,25 pakket + 1 doos + 0,35 betaalfee) | ~€21,70 (34%) |
-| Arbequina 1L | €24,95 | €22,89 | €17,05 (7 + 1 + 8,25 + 0,50 + 0,30) | ~€5,85 (26%) |
-| Duo (5L + 1L) | €89,00 | €81,65 | €49,65 (37 + 3 + 8,25 + 1 + 0,40) | ~€32,00 (39%) |
+| Picual 5L blik | €89,00 | €81,65 | €41,60 (30 inkoop + 2 pallet + 8,25 pakket + 1 doos + 0,35 betaalfee) | ~€40,00 (49%) |
+| Arbequina 1L | €34,95 | €32,06 | €17,05 (7 + 1 + 8,25 + 0,50 + 0,30) | ~€15,00 (47%) |
+| Duo (5L + 1L) | €115,00 | €105,50 | €49,65 (37 + 3 + 8,25 + 1 + 0,40) | ~€55,85 (53%) |
 
-Conclusies: de losse 1L Arbequina is nauwelijks rendabel omdat de bezorgkosten bijna
-even hoog zijn als de inkoop; de duo lost dat op (zelfde pakket, dubbele marge). De 5L
-Picual is het echte product: gezonde marge en op €13,80 per liter alsnog veel goedkoper
-dan premiumflessen van €40+ per liter, dus makkelijk te verkopen. Prijzen zijn een
-startpunt; de pallet- en pakketkosten moeten met echte offertes bevestigd worden.
+Prijsonderbouwing: mid-premium single estate zit op €20 tot €30 per 500 ml, dus €40 tot
+€60 per liter voor flessen. De Arbequina op €34,95 per liter zit daar nog onder en is
+dus marktconform voor vers-aan-de-bron. Het 5L-blik is als horecaformaat per liter
+altijd goedkoper; op €17,80 per liter blijft het spotgoedkoop vergeleken met
+premiumflessen en houdt het toch bijna 50% marge. De duo deelt één pakket en heeft
+daardoor de beste marge. Alle bedragen zijn een startpunt; de pallet- en pakketkosten
+moeten met echte offertes bevestigd worden.
 
 **B2B (horeca, delicatessenwinkels, kantoren): volume en cashflow.**
 Het landgoed levert al 1L- en 5L-blikken en 5L-karaffen; die formaten zijn gemaakt voor

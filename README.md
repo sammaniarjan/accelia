@@ -14,8 +14,8 @@ Pages).
 
 - **Naam**: "BRON" is een werktitel; zoek en vervang in `index.html`.
 - **Betaallinks**: maak in Mollie of Stripe drie betaallinks aan (iDEAL) en vervang de
-  drie `VERVANG-DOOR-BETAALLINK-...` placeholders in `index.html`: Picual 5L (€69),
-  Arbequina 1L (€24,95) en het duo (€89).
+  drie `VERVANG-DOOR-BETAALLINK-...` placeholders in `index.html`: Picual 5L (€89),
+  Arbequina 1L (€34,95) en het duo (€115).
 - **E-mailformulier**: het script onderaan `index.html` bevat een `TODO`; koppel daar
   Formspree, MailerLite of een eigen endpoint aan.
 - **Zakelijk e-mailadres**: de B2B-knop verwijst naar `zakelijk@voorbeeld.nl`; vervang
