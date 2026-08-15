@@ -63,10 +63,35 @@ EU-gezondheidsclaim (Verordening (EU) 432/2012) op het etiket. Abonnementskortin
 
 Uitgangspunt: zo min mogelijk investeren op moment 0, wel direct doorverkopen.
 
-**B2C (de landingspagina): voorverkoop per persing.**
+**B2C (de landingspagina): voorverkoop per persing, met directe betaling.**
 Verkoop op reservering en koop pas in bij het landgoed als de bestellingen binnen zijn.
-Klanten betalen vooruit, de marge is het hoogst (2 tot 3x op inkoop) en er is geen
-voorraadrisico. De Oogstclub-mechaniek maakt van de beperkte oogst een feature.
+Klanten betalen bij reservering (betaallinks met iDEAL via Mollie of Stripe; geen
+maandkosten, alleen een fee per transactie), dus de eerste inkoop financiert zichzelf
+en er is geen voorraadrisico.
+
+### Unit economics (aannames gemarkeerd, btw op voedsel is 9%)
+
+Aangeleverde inkoopprijzen: 5L Picual €30, 1L Arbequina €7, beide exclusief vervoer.
+Vervoer bestaat uit twee delen die je apart moet bekijken:
+
+- **Spanje naar NL**: groupage kost per pallet grofweg €45 tot €220. Eén pallet draagt
+  ruwweg 100+ blikken van 5L, dus geconsolideerd is dit €1 tot €3 per product. De
+  aanname "€10 vervoer per product" klopt alleen als je per stuk laat verzenden; dat
+  moet je dus nooit doen. Reserveringen bundelen tot één palletzending per persing.
+- **NL-bezorging (de echte kostenpost)**: een PostNL-pakket tot 10 kg kost €8,25
+  zakelijk; via Sendcloud of vergelijkbare platforms minder.
+
+| Product | Prijs incl. btw en verzending | Omzet ex btw | Geschatte kosten | Marge |
+|---|---|---|---|---|
+| Picual 5L blik | €69,00 | €63,30 | €41,60 (30 inkoop + 2 pallet + 8,25 pakket + 1 doos + 0,35 betaalfee) | ~€21,70 (34%) |
+| Arbequina 1L | €24,95 | €22,89 | €17,05 (7 + 1 + 8,25 + 0,50 + 0,30) | ~€5,85 (26%) |
+| Duo (5L + 1L) | €89,00 | €81,65 | €49,65 (37 + 3 + 8,25 + 1 + 0,40) | ~€32,00 (39%) |
+
+Conclusies: de losse 1L Arbequina is nauwelijks rendabel omdat de bezorgkosten bijna
+even hoog zijn als de inkoop; de duo lost dat op (zelfde pakket, dubbele marge). De 5L
+Picual is het echte product: gezonde marge en op €13,80 per liter alsnog veel goedkoper
+dan premiumflessen van €40+ per liter, dus makkelijk te verkopen. Prijzen zijn een
+startpunt; de pallet- en pakketkosten moeten met echte offertes bevestigd worden.
 
 **B2B (horeca, delicatessenwinkels, kantoren): volume en cashflow.**
 Het landgoed levert al 1L- en 5L-blikken en 5L-karaffen; die formaten zijn gemaakt voor
@@ -104,10 +129,15 @@ door reserveringen gedekt is.
 ## 7. Open punten
 
 - **Naam**: "BRON" is een werktitel (past bij "direct bij de bron") en overal in één keer vervangbaar.
-- **Oogstdatum en aantallen**: de pagina gaat uit van oogst november 2026 en genummerde flessen; invullen zodra bekend.
-- **Polyfenool-labtest**: laten uitvoeren; ontgrendelt de EU-claim en de €30+-tier.
+- **Oogstdatum**: de pagina gaat uit van oogst november 2026; invullen zodra bekend.
+- **Betaallinks**: drie placeholders in `index.html` (Picual, Arbequina, duo) vervangen
+  door echte Mollie- of Stripe-betaallinks met iDEAL.
+- **Vervoersoffertes**: pallet Spanje-NL en pakkettarief NL opvragen; de marges in de
+  tabel hierboven staan of vallen hiermee.
+- **Polyfenool-labtest**: laten uitvoeren; ontgrendelt de EU-claim en een hogere prijs.
 - **E-mailprovider en zakelijk e-mailadres**: formulier en B2B-knop hebben placeholder-hooks.
-- **Inkoopprijzen landgoed**: opvragen voor de B2B-prijslijst.
+- **Herroepingsrecht en voorwaarden**: bij vooruitbetaling horen duidelijke levertermijnen
+  en een geld-terug-belofte op de pagina (staat er nu als één zin bij de productkaarten).
 
 Bronnen: zie o.a. de Shopify-case over Citizens of Soil, Brand Vision en Forbes over
 Graza, FoodNavigator over Brightland, EUR-Lex 432/2012, spanish-oil.com en Casa del

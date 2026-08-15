@@ -199,11 +199,24 @@
   .oil-var { font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
   .oil-card h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); margin: 12px 0 18px; }
   .oil-card p { color: var(--cream-dim); font-size: 16px; max-width: 44ch; }
-  .oil-use {
-    display: inline-block; margin-top: 26px; font-size: 12px; font-weight: 600;
-    letter-spacing: .14em; text-transform: uppercase; color: var(--green-bright);
-    border: 1px solid rgba(198,228,85,.4); border-radius: 999px; padding: 8px 16px;
+  .oil-price { margin: 28px 0 22px; display: flex; flex-direction: column; gap: 4px; }
+  .price { font-family: var(--serif); font-size: clamp(30px, 3vw, 40px); color: var(--cream); }
+  .price-sub { font-size: 13px; color: var(--cream-dim); }
+  .btn-buy { padding: 15px 30px; font-size: 14px; }
+  .bundle {
+    margin-top: 32px; border: 1px solid rgba(244,239,227,.18); border-radius: 8px;
+    padding: 24px 32px; display: flex; justify-content: space-between; align-items: center;
+    gap: 24px; flex-wrap: wrap;
   }
+  .bundle p { color: var(--cream-dim); font-size: 16px; }
+  .bundle strong { color: var(--cream); font-weight: 500; }
+  .bundle .cta-mini {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--cream); text-decoration: none; border: 1px solid rgba(244,239,227,.4);
+    padding: 12px 22px; border-radius: 999px; transition: all .25s ease; white-space: nowrap;
+  }
+  .bundle .cta-mini:hover { background: var(--cream); color: var(--ink); }
+  .order-note { margin-top: 28px; font-size: 14px; color: var(--cream-dim); max-width: 62ch; }
 
   /* ---------- proof ---------- */
   .proof { padding: clamp(90px, 14vh, 160px) 0; background: var(--deep); }
@@ -279,7 +292,7 @@
     </div>
     <div class="hero-row reveal">
       <a class="btn" href="#reserveer">Reserveer de nieuwe oogst</a>
-      <p class="hero-note">Oogst november 2026 · <strong>genummerde flessen, beperkte persing</strong></p>
+      <p class="hero-note">Oogst november 2026 · <strong>beperkte persing, op is op</strong></p>
     </div>
     <div class="specs reveal" aria-label="Specificaties">
       <div class="spec"><span class="spec-k">Oogst</span><span class="spec-v">nov &rsquo;26</span></div>
@@ -339,7 +352,7 @@
     <div class="sensory-grid">
       <div class="reveal">
         <p class="lead">Open de fles en je ruikt het meteen: tomatenblad, groene appel, vers gemaaid gras. De smaak begint zacht en zoet en eindigt met een peperige afdronk die kriebelt in je keel. Dat prikkelen komt door de polyfenolen, en daar zit alleen verse, vroeg geoogste olie vol mee.</p>
-        <p class="lead">Giet hem over brood, tomaten of een gebakken ei. Voor bakken en braden is er de zachtere Arbequina.</p>
+        <p class="lead">Giet hem over brood, tomaten of een gebakken ei. En omdat Picual van nature zo stabiel is, kun je er net zo goed gewoon in bakken.</p>
       </div>
       <div class="aromas reveal">
         <div class="aroma"><span class="name">Tomatenblad</span><span class="tag">geur</span></div>
@@ -352,24 +365,31 @@
   </div>
 </section>
 
-<section class="oils">
+<section class="oils" id="reserveer">
   <div class="wrap">
     <span class="label reveal">Twee olies, geen keuzestress</span>
     <h2 class="reveal">Je hebt er maar <em>twee</em> nodig.</h2>
     <div class="oils-grid">
       <div class="oil-card reveal">
-        <span class="oil-var">Picual</span>
+        <span class="oil-var">Picual · 5 liter blik</span>
         <h3>De Peper</h3>
-        <p>Groen, intens, met die kenmerkende peperige afdronk. Voor afmaken: over tomaten, brood, carpaccio, soep. De fles die op tafel staat.</p>
-        <span class="oil-use">afmaken &amp; dippen</span>
+        <p>Groen, intens, met die peperige afdronk. En van nature de meest hittestabiele olijfsoort die er is, dus je bakt en frituurt er net zo makkelijk in. Het blik dat in Spaanse keukens naast het fornuis staat.</p>
+        <div class="oil-price"><span class="price">&euro; 69</span><span class="price-sub">&euro; 13,80 per liter · incl. btw en verzending</span></div>
+        <a class="btn btn-buy" href="VERVANG-DOOR-BETAALLINK-PICUAL">Reserveer en betaal</a>
       </div>
       <div class="oil-card reveal">
-        <span class="oil-var">Arbequina</span>
+        <span class="oil-var">Arbequina · 1 liter</span>
         <h3>De Zachte</h3>
-        <p>Zoet, soepel, amandel en groene appel. Voor elke dag: bakken, braden, dressing, een gebakken ei. De fles die naast het fornuis staat.</p>
-        <span class="oil-use">elke dag &amp; koken</span>
+        <p>Zoet en soepel, amandel en groene appel. Voor dressings, zacht bakken en alles waar de olie niet moet overheersen. Het maatje voor op het aanrecht.</p>
+        <div class="oil-price"><span class="price">&euro; 24,95</span><span class="price-sub">incl. btw en verzending</span></div>
+        <a class="btn btn-buy" href="VERVANG-DOOR-BETAALLINK-ARBEQUINA">Reserveer en betaal</a>
       </div>
     </div>
+    <div class="bundle reveal">
+      <p><strong>Allebei?</strong> Het blik Picual plus de liter Arbequina samen voor <strong>&euro; 89</strong>.</p>
+      <a class="cta-mini" href="VERVANG-DOOR-BETAALLINK-DUO">Reserveer het duo</a>
+    </div>
+    <p class="order-note reveal">Reserveren is meteen betalen. Wij bestellen bij het landgoed precies wat gereserveerd is en leveren binnen een paar weken na de persing. Komt de persing niet, dan krijg je je geld terug.</p>
   </div>
 </section>
 
@@ -398,14 +418,14 @@
   </div>
 </section>
 
-<section class="signup" id="reserveer">
+<section class="signup" id="oogstbericht">
   <div class="wrap">
-    <span class="label reveal">De Oogstclub</span>
-    <h2 class="reveal">De oogst is beperkt. De flessen zijn <em>genummerd.</em></h2>
-    <p class="sub reveal">Word lid van de Oogstclub en reserveer de eerste persing van november voordat de open verkoop begint. Je krijgt het oogstbericht uit Murcia en als eerste toegang zodra de molen draait.</p>
+    <span class="label reveal">Het oogstbericht</span>
+    <h2 class="reveal">Nog niet klaar om te bestellen? Volg de <em>oogst.</em></h2>
+    <p class="sub reveal">Laat je e-mailadres achter en krijg het oogstbericht uit Murcia: wanneer er geplukt wordt, wanneer de molen draait en wanneer de volgende persing te reserveren is.</p>
     <form class="reveal" id="waitlist" autocomplete="email">
       <input type="email" name="email" placeholder="jouw@email.nl" required aria-label="E-mailadres">
-      <button class="btn" type="submit">Reserveer mijn fles</button>
+      <button class="btn" type="submit">Houd me op de hoogte</button>
     </form>
     <p class="form-note reveal">Geen nieuwsbriefspam. Alleen bericht als er geperst is.</p>
     <p class="form-ok" id="form-ok">Je staat op de lijst. Tot bij de eerste persing.</p>
