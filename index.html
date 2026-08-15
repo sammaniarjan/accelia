@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRON — Olijfolie van één landgoed</title>
+<title>BRON · Olijfolie van één landgoed</title>
 <meta name="description" content="Extra vergine olijfolie, dezelfde dag geplukt en koud geperst op één landgoed in Murcia. Direct bij de bron ingekocht. Oogstdatum op elke fles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -236,6 +236,18 @@
   .form-note { margin-top: 18px; font-size: 13px; color: var(--cream-dim); }
   .form-ok { margin-top: 24px; font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--green-bright); display: none; }
 
+  /* ---------- b2b ---------- */
+  .b2b { border-top: 1px solid rgba(244,239,227,.12); background: var(--deep); padding: clamp(48px, 7vh, 72px) 0; }
+  .b2b-row { display: flex; justify-content: space-between; align-items: center; gap: 32px; flex-wrap: wrap; }
+  .b2b .label { margin-bottom: 10px; }
+  .b2b-text { color: var(--cream-dim); font-size: 15px; max-width: 60ch; }
+  .b2b a.cta-mini {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--cream); text-decoration: none; border: 1px solid rgba(244,239,227,.4);
+    padding: 12px 22px; border-radius: 999px; transition: all .25s ease; white-space: nowrap;
+  }
+  .b2b a.cta-mini:hover { background: var(--cream); color: var(--ink); }
+
   /* ---------- footer ---------- */
   footer {
     border-top: 1px solid rgba(244,239,227,.12);
@@ -263,7 +275,7 @@
     <p class="kicker reveal">Extra vergine olijfolie · één landgoed · Murcia, Spanje</p>
     <h1 class="reveal">De meeste olijfolie is <em>oud</em> voordat jij hem proeft.</h1>
     <div class="hero-sub reveal">
-      <p>Supermarktolie is gemengd, verscheept en maandenlang opgeslagen. Wij kopen direct bij de pers van één Spaans landgoed — geplukt en koud geperst op dezelfde dag.</p>
+      <p>Supermarktolie ligt vaak meer dan een jaar in tanks en op schappen voordat jij hem koopt. Wij kopen direct bij de pers van één Spaans landgoed. Geplukt en koud geperst op dezelfde dag.</p>
     </div>
     <div class="hero-row reveal">
       <a class="btn" href="#reserveer">Reserveer de nieuwe oogst</a>
@@ -287,22 +299,22 @@
 
 <section class="why">
   <div class="wrap">
-    <h2 class="reveal">Waarom olijfolie thuis nooit smaakt zoals <em>daar</em> — en hoe wij dat oplossen.</h2>
+    <h2 class="reveal">Waarom olijfolie thuis nooit zo smaakt als <em>op vakantie.</em></h2>
     <div class="why-grid">
       <div class="why-item reveal">
         <span class="why-num">01</span>
         <h3>Eén landgoed, geen mengsel</h3>
-        <p>Alles komt van Hacienda San Miguel, een familielandgoed aan de rand van natuurpark Sierra Espuña. Eigen bomen, eigen molen op het erf. Geen anonieme blend uit drie landen — één herkomst die je kunt opzoeken.</p>
+        <p>Alles komt van Hacienda San Miguel, een familielandgoed aan de rand van natuurpark Sierra Espuña. Eigen bomen en een eigen molen op het erf. Je kunt de herkomst gewoon opzoeken op de kaart.</p>
       </div>
       <div class="why-item reveal">
         <span class="why-num">02</span>
         <h3>Dezelfde dag geperst</h3>
-        <p>Olijven verliezen hun aroma binnen uren na de pluk. Hier gaan ze dezelfde dag de molen in: koude extractie, korte kneedtijd, meteen naar rvs-tanks onder stikstof. Versheid is geen marketingwoord, het is een proces.</p>
+        <p>Olijven verliezen hun aroma al binnen een paar uur na de pluk. Hier gaan ze dezelfde dag de molen in: koude extractie, korte kneedtijd en meteen naar rvs-tanks in de kelder.</p>
       </div>
       <div class="why-item reveal">
         <span class="why-num">03</span>
         <h3>Direct van de bron naar jou</h3>
-        <p>Wij kopen aan de pers en slaan de hele tussenketen over — geen bulkhandel, geen havenopslag, geen schap. Daarom staat op elke fles de oogstdatum. Durft je supermerk dat ook?</p>
+        <p>Wij kopen aan de pers en slaan de tussenhandel over. Daarom kunnen we op elke fles de oogstdatum zetten. De houdbaarheidsdatum op een supermarktfles verbergt juist hoe oud de olie is.</p>
       </div>
     </div>
   </div>
@@ -315,7 +327,7 @@
       <div class="tl-step"><span class="tl-time">07:00</span><p>Pluk in de ochtendkoelte, op het landgoed.</p></div>
       <div class="tl-step"><span class="tl-time">+ 4 uur</span><p>De molen op het erf draait. Koude extractie, korte kneedtijd.</p></div>
       <div class="tl-step"><span class="tl-time">&lt; 24 uur</span><p>In rvs-tanks, beschermd tegen licht en zuurstof.</p></div>
-      <div class="tl-step"><span class="tl-time">&plusmn; 2 wk</span><p>Gebotteld op oogstdatum en bij jou thuis. Niet na 18 maanden schap.</p></div>
+      <div class="tl-step"><span class="tl-time">&plusmn; 2 wk</span><p>Gebotteld kort na de pers en binnen een paar weken bij jou thuis.</p></div>
     </div>
   </div>
 </section>
@@ -323,11 +335,11 @@
 <section class="sensory">
   <div class="wrap">
     <span class="label reveal">De smaak</span>
-    <h2 class="reveal">Picual die ruikt naar de boomgaard, <em>niet</em> naar de fabriek.</h2>
+    <h2 class="reveal">Picual die naar de <em>boomgaard</em> ruikt.</h2>
     <div class="sensory-grid">
       <div class="reveal">
-        <p class="lead">Open de fles en je ruikt het meteen: tomatenblad, groene appel, vers gemaaid gras. Dan een zachte, zoete start — en een peperige afdronk die kriebelt in je keel. Dat prikkelen is geen toeval: het zijn de polyfenolen, het bewijs van een verse, vroege oogst.</p>
-        <p class="lead">Over brood. Over tomaten. Over een gebakken ei. Deze olie is geen bakvet — hij is het gerecht.</p>
+        <p class="lead">Open de fles en je ruikt het meteen: tomatenblad, groene appel, vers gemaaid gras. De smaak begint zacht en zoet en eindigt met een peperige afdronk die kriebelt in je keel. Dat prikkelen komt door de polyfenolen, en daar zit alleen verse, vroeg geoogste olie vol mee.</p>
+        <p class="lead">Giet hem over brood, tomaten of een gebakken ei. Voor bakken en braden is er de zachtere Arbequina.</p>
       </div>
       <div class="aromas reveal">
         <div class="aroma"><span class="name">Tomatenblad</span><span class="tag">geur</span></div>
@@ -363,11 +375,11 @@
 
 <section class="proof">
   <div class="wrap">
-    <span class="label reveal">Geen verhalen, cijfers</span>
+    <span class="label reveal">De cijfers</span>
     <div class="proof-grid reveal">
       <div class="proof-cell">
         <span class="big">&le; 0,2<i>%</i></span>
-        <p>Zuurgraad — de EU-grens voor extra vergine is 0,8%. Hoe lager, hoe verser de olijf bij de pers.</p>
+        <p>Zuurgraad. De EU-grens voor extra vergine is 0,8%; hoe lager, hoe verser de olijf bij de pers.</p>
       </div>
       <div class="proof-cell">
         <span class="big">0 <i>dagen</i></span>
@@ -390,13 +402,23 @@
   <div class="wrap">
     <span class="label reveal">De Oogstclub</span>
     <h2 class="reveal">De oogst is beperkt. De flessen zijn <em>genummerd.</em></h2>
-    <p class="sub reveal">Word lid van de Oogstclub en reserveer de eerste persing van november &mdash; v&oacute;&oacute;r de open verkoop. Je krijgt het oogstbericht uit Murcia en als eerste toegang zodra de molen draait.</p>
+    <p class="sub reveal">Word lid van de Oogstclub en reserveer de eerste persing van november voordat de open verkoop begint. Je krijgt het oogstbericht uit Murcia en als eerste toegang zodra de molen draait.</p>
     <form class="reveal" id="waitlist" autocomplete="email">
       <input type="email" name="email" placeholder="jouw@email.nl" required aria-label="E-mailadres">
       <button class="btn" type="submit">Reserveer mijn fles</button>
     </form>
     <p class="form-note reveal">Geen nieuwsbriefspam. Alleen bericht als er geperst is.</p>
     <p class="form-ok" id="form-ok">Je staat op de lijst. Tot bij de eerste persing.</p>
+  </div>
+</section>
+
+<section class="b2b">
+  <div class="wrap b2b-row">
+    <div>
+      <span class="label reveal">Horeca &amp; inkoop</span>
+      <p class="b2b-text reveal">We leveren dezelfde persing ook aan restaurants, winkels en kantoren, in blikken van 1 en 5 liter rechtstreeks van het landgoed. Vraag de prijslijst en een sample aan.</p>
+    </div>
+    <a class="cta-mini reveal" href="mailto:zakelijk@voorbeeld.nl?subject=Prijslijst%20en%20sample">Vraag de prijslijst aan</a>
   </div>
 </section>
 
@@ -413,7 +435,7 @@
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // waitlist form — koppel hier je e-mailprovider (Formspree / Mailerlite / Supabase) aan
+  // waitlist form: koppel hier je e-mailprovider (Formspree / MailerLite / Supabase) aan
   document.getElementById('waitlist').addEventListener('submit', (ev) => {
     ev.preventDefault();
     // TODO: POST naar je e-mailprovider endpoint

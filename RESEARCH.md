@@ -1,80 +1,114 @@
-# Marktonderzoek — premium D2C-olijfolie (aug 2026)
+# Marktonderzoek: premium D2C-olijfolie (aug 2026)
 
 Onderzoek naar wat werkt in de verzadigde olijfoliemarkt, als basis voor de landingspagina.
 
-## 1. De markt is verzadigd — maar niet op elke as
+## 1. De markt is verzadigd, maar niet op elke as
 
 Iedereen zegt hetzelfde: "koudgeperst, vroege oogst, single origin, bekroond". Dat is de
-verzadigde as. De winnaars verkopen géén "premium olijfolie" maar één scherpe *why*:
+verzadigde as. De winnaars verkopen geen "premium olijfolie" maar een scherpe *why*:
 
 | Merk | Why | Bewijs |
 |---|---|---|
-| Graza (VS) | Gemak & demystificatie: knijpfles, 2 SKU's (Sizzle/Drizzle) | ~$240M waardering in 3 jaar |
-| Brightland (VS) | Design & vertrouwen: beschilderde UV-werende flessen | Wirecutter/Goop, Whole Foods |
+| Graza (VS) | Gemak en demystificatie: knijpfles, 2 SKU's (Sizzle/Drizzle) | ~$240M waardering in 3 jaar |
+| Brightland (VS) | Design en vertrouwen: beschilderde UV-werende flessen | Wirecutter/Goop, Whole Foods |
 | Fat Gold (VS) | Radicale transparantie: batch-identiteit, zine per blik | Abonnement-first, $179/jr |
 | Citizens of Soil (VK) | Lidmaatschap: "The Olive Oil Club", oogstdatum op elk pak | **62% van checkouts wordt abonnement** (92e percentiel Recharge), +130% YoY |
-| NL-markt | Vooral curatie-retailers (De Olijfolie Shop, Olives & More) | **Geen sterk NL single-estate D2C-merk → dat is het gat** |
+| NL-markt | Vooral curatie-retailers (De Olijfolie Shop, Olives & More) | **Geen sterk NL single-estate D2C-merk. Dat is het gat.** |
 
 **Onderbenut in NL/EU:** versheid als bederfelijk product ("deze oogst, op = op"),
 oogstdatum als headline, geverifieerde polyfenoolwaarden met EU-gezondheidsclaim,
-club-mechaniek. Precies de assen waarop wij kunnen winnen met een landgoed-directe inkoop.
+club-mechaniek. Precies de assen waarop directe inkoop bij een landgoed kan winnen.
 
 ## 2. Conversiepatronen die aantoonbaar werken
 
-1. **Oogstdatum als headline-element** — supermarktolie is doorgaans 12–18+ maanden oud
-   (houdbaarheidsdatum wordt vanaf botteldatum gerekend en verbergt dat). Bijna niemand
+1. **Oogstdatum als headline-element.** Supermarktolie is doorgaans 12 tot 18+ maanden oud;
+   de houdbaarheidsdatum wordt vanaf botteldatum gerekend en verbergt dat. Bijna niemand
    in NL zet versheid vooraan.
-2. **Specificatieblok als designelement** — oogstdatum, ras, zuurgraad, "boom → fles: X uur".
+2. **Specificatieblok als designelement.** Oogstdatum, ras, zuurgraad, "boom naar fles: X uur".
    Meetbaar in plaats van lyrisch.
-3. **Club in plaats van nieuwsbrief/abonnement** — de hernoemde "Club" van Citizens of Soil
-   is het best gedocumenteerde conversiemechanisme in de categorie.
-4. **Max. 2 SKU's met taakgerichte namen** — beslissingsfrictie weghalen (Graza-patroon):
+3. **Club in plaats van nieuwsbrief of abonnement.** De hernoemde "Club" van Citizens of
+   Soil is het best gedocumenteerde conversiemechanisme in de categorie.
+4. **Max. 2 SKU's met taakgerichte namen.** Beslissingsfrictie weghalen (Graza-patroon):
    Picual "De Peper" (afmaken), Arbequina "De Zachte" (elke dag).
-5. **Echte schaarste** — een oogst ís beperkt; genummerde flessen, olio-nuovo-venster
-   (piek slechts 2–4 maanden) alleen voor de wachtlijst.
-6. **Pre-launch**: één belofte, één e-mailveld, 6–8 weken vóór aankomst starten;
-   e-mailreeks: welkom → boerderijverhaal → "waarom je huidige olie oud is" → oogst-countdown.
+5. **Echte schaarste.** Een oogst is werkelijk beperkt; genummerde flessen en het
+   olio-nuovo-venster (piek slechts 2 tot 4 maanden) alleen voor de wachtlijst.
+6. **Pre-launch.** Eén belofte, één e-mailveld, 6 tot 8 weken voor aankomst starten.
+   E-mailreeks: welkom, boerderijverhaal, "waarom je huidige olie oud is", oogst-countdown.
    Gratis flessen naar food-nano-creators zonder instructies (Graza's lanceermechaniek).
 
 ## 3. Designtaal
 
 Drie levende codes: (a) design-object-minimalisme (Brightland/Wonder Valley),
-(b) luide anti-premium (Graza), (c) **opkomend en onderbenut: "lab + boerderij"** —
-batchnummers, chemie, oogstdata als zichtbare designelementen. De landingspagina volgt (c)
-met een donkere, redactionele typografische stijl. Botanische illustraties en
-olijftak-clichés zijn inmiddels de default → vermijden.
+(b) luide anti-premium (Graza), (c) **opkomend en onderbenut: "lab + boerderij"** met
+batchnummers, chemie en oogstdata als zichtbare designelementen. De landingspagina volgt
+(c) met een donkere, redactionele typografische stijl. Botanische illustraties en
+olijftak-clichés zijn inmiddels de default, dus die vermijden we.
 
 ## 4. Prijsbenchmarks (500 ml premium EVOO, EU)
 
 | Tier | €/500 ml | Voorbeeld |
 |---|---|---|
-| Supermarkt | 5–9 | referentievloer |
-| Instap-premium bekroond Spaans | 13–18 | Oro Bailén Picual €15,79 (Flos Olei 98) |
-| Mid-premium single estate | 20–30 | Castillo de Canena €23–25 |
-| High-polyphenol / gezondheidsclaim | 35–50+ | The Governor, Brightland-equivalent |
+| Supermarkt | 5-9 | referentievloer |
+| Instap-premium bekroond Spaans | 13-18 | Oro Bailén Picual €15,79 (Flos Olei 98) |
+| Mid-premium single estate | 20-30 | Castillo de Canena €23-25 |
+| High-polyphenol / gezondheidsclaim | 35-50+ | The Governor, Brightland-equivalent |
 
-**Advies: €19,50–27,50 per 500 ml.** Boven instap (we zijn verser én single estate), onder
-de health-hero-tier — tenzij lab-geverifieerde polyfenoolwaarden ≥5 mg hydroxytyrosol-
-derivaten per 20 g beschikbaar zijn; dan is €30+ verdedigbaar én mag de beschermde
-EU-gezondheidsclaim (Verordening (EU) 432/2012) op het etiket. Abonnementskorting
-~10–12% + gratis verzending is de standaard.
+**Advies: €19,50 tot €27,50 per 500 ml.** Boven instap (verser en single estate), onder de
+health-hero-tier. Zijn er lab-geverifieerde polyfenoolwaarden van minimaal 5 mg
+hydroxytyrosol-derivaten per 20 g, dan is €30+ verdedigbaar en mag de beschermde
+EU-gezondheidsclaim (Verordening (EU) 432/2012) op het etiket. Abonnementskorting van
+10 tot 12% plus gratis verzending is de standaard.
 
-## 5. Het product (uit de brochure Hacienda San Miguel)
+## 5. Kanaalstrategie: B2C en B2B naast elkaar, zonder voorraadrisico
+
+Uitgangspunt: zo min mogelijk investeren op moment 0, wel direct doorverkopen.
+
+**B2C (de landingspagina): voorverkoop per persing.**
+Verkoop op reservering en koop pas in bij het landgoed als de bestellingen binnen zijn.
+Klanten betalen vooruit, de marge is het hoogst (2 tot 3x op inkoop) en er is geen
+voorraadrisico. De Oogstclub-mechaniek maakt van de beperkte oogst een feature.
+
+**B2B (horeca, delicatessenwinkels, kantoren): volume en cashflow.**
+Het landgoed levert al 1L- en 5L-blikken en 5L-karaffen; die formaten zijn gemaakt voor
+horeca. Tien restaurants die maandelijks bestellen geven meer omzet dan honderden losse
+flessen, tegen bijna nul marketingkosten. Marge is lager (30 tot 50%) maar de verkoop is
+voorspelbaar en herhaalt zichzelf. Start met een prijslijst-pdf en een samplebox; geen
+webshop nodig.
+
+**Wat bewust niet op moment 0:**
+- Geen eigen voorraad of magazijn: orders per persing bundelen tot één palletzending.
+- Geen eigen botteling of private label: het landgoed bottelt en etiketteert al; eigen
+  etiket kan later als het volume er is.
+- Geen betaalde advertenties: wachtlijst, samples en nano-creators eerst.
+
+**Wel regelen (klein, maar verplicht):**
+- KvK-inschrijving en registratie als levensmiddelenbedrijf bij de NVWA (gratis).
+- Binnen de EU geen douane, wel NL-etiketteringsregels (o.a. Verordening (EU) 29/2012
+  voor olijfolie: categorie, herkomst, lotnummer).
+- Aansprakelijkheidsverzekering zodra er echt geleverd wordt.
+
+Investering op moment 0 blijft daarmee beperkt tot: domeinnaam, e-mailprovider,
+een samplebox (orde van honderden euro's) en de eerste gebundelde inkooporder die al
+door reserveringen gedekt is.
+
+## 6. Het product (uit de brochure Hacienda San Miguel)
 
 - Familielandgoed in Alhama de Murcia, aan de rand van natuurpark Sierra Espuña; bomen sinds 1995, eigen molen op het erf sinds 1997.
-- Zelfde dag geplukt én geperst; koude extractie, korte kneedtijd; opslag in rvs-tanks; eigen laboratorium.
-- Rassen: Picual & Arbequina (aanvullend Koroneiki, Arbusana).
-- Zuurgraad ≤ 0,2% (topselectie; EU-grens extra vergine is 0,8%).
+- Zelfde dag geplukt en geperst; koude extractie, korte kneedtijd; opslag in rvs-tanks; eigen laboratorium.
+- Rassen: Picual en Arbequina (aanvullend Koroneiki, Arbusana).
+- Zuurgraad max. 0,2% (topselectie; de EU-grens voor extra vergine is 0,8%).
 - Aroma: tomaat(blad), groene appel, amandel, vers gras; zachte zoete start, peperige afdronk.
 - Gecertificeerde geïntegreerde teelt; kwaliteitskeurmerk regio Murcia.
+- Formaten: glas 25/50 cl, PET 50 cl/1L/5L, blik 1L/5L.
 
-## 6. Open punten
+## 7. Open punten
 
-- **Naam**: "BRON" is een werktitel (past bij "direct bij de bron"); overal in één keer vervangbaar.
-- **Oogstdatum/aantallen**: pagina gaat uit van oogst november 2026 en genummerde flessen — invullen zodra bekend.
+- **Naam**: "BRON" is een werktitel (past bij "direct bij de bron") en overal in één keer vervangbaar.
+- **Oogstdatum en aantallen**: de pagina gaat uit van oogst november 2026 en genummerde flessen; invullen zodra bekend.
 - **Polyfenool-labtest**: laten uitvoeren; ontgrendelt de EU-claim en de €30+-tier.
-- **E-mailprovider**: formulier heeft een TODO-hook (Formspree/MailerLite/Supabase).
+- **E-mailprovider en zakelijk e-mailadres**: formulier en B2B-knop hebben placeholder-hooks.
+- **Inkoopprijzen landgoed**: opvragen voor de B2B-prijslijst.
 
-Bronnen: zie o.a. Shopify-case Citizens of Soil, Brand Vision/Forbes over Graza,
-FoodNavigator over Brightland, EUR-Lex 432/2012, spanish-oil.com en Casa del Aceite
-voor prijzen. (Volledige lijst in het onderzoeksrapport in de sessie.)
+Bronnen: zie o.a. de Shopify-case over Citizens of Soil, Brand Vision en Forbes over
+Graza, FoodNavigator over Brightland, EUR-Lex 432/2012, spanish-oil.com en Casa del
+Aceite voor prijzen.
