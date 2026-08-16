@@ -297,10 +297,28 @@
   .form-ok { margin-top: 24px; font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--green-bright); display: none; }
 
   /* ---------- b2b ---------- */
-  .b2b { border-top: 1px solid rgba(244,239,227,.12); background: var(--deep); padding: clamp(48px, 7vh, 72px) 0; }
-  .b2b-row { display: flex; justify-content: space-between; align-items: center; gap: 32px; flex-wrap: wrap; }
-  .b2b .label { margin-bottom: 10px; }
-  .b2b-text { color: var(--cream-dim); font-size: 15px; max-width: 60ch; }
+  .b2b { border-top: 1px solid rgba(244,239,227,.12); background: var(--deep); padding: clamp(70px, 11vh, 130px) 0; }
+  .b2b-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
+  @media (max-width: 860px) { .b2b-grid { grid-template-columns: 1fr; } }
+  .b2b .label { margin-bottom: 18px; }
+  .b2b h2 { font-size: clamp(30px, 3.6vw, 48px); margin-bottom: 28px; }
+  .b2b-text { color: var(--cream-dim); font-size: 16px; max-width: 52ch; margin-bottom: 32px; }
+  .b2b-formats { list-style: none; margin: 0 0 36px; }
+  .b2b-formats li {
+    display: flex; justify-content: space-between; gap: 24px; align-items: baseline;
+    padding: 14px 0; border-bottom: 1px solid rgba(244,239,227,.14); font-size: 15px;
+  }
+  .b2b-formats li:first-child { border-top: 1px solid rgba(244,239,227,.14); }
+  .b2b-formats li span:first-child { font-family: var(--serif); font-size: 19px; color: var(--cream); }
+  .b2b-formats li span:last-child { color: var(--cream-dim); text-align: right; }
+  .b2b-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 520px) { .b2b-photos { grid-template-columns: 1fr; } }
+  .packshot { background: var(--cream); border-radius: 8px; overflow: hidden; }
+  .packshot img { display: block; width: 100%; height: 240px; object-fit: contain; background: #fff; padding: 14px; }
+  .packshot figcaption {
+    padding: 12px 16px; font-size: 12px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: #5a5f45;
+  }
   .b2b a.cta-mini {
     font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--cream); text-decoration: none; border: 1px solid rgba(244,239,227,.4);
@@ -339,7 +357,7 @@
     </div>
     <div class="hero-row reveal">
       <a class="btn" href="#reserveer">Reserveer de nieuwe oogst</a>
-      <p class="hero-note">Oogst november 2026 · <strong>deze persing: 120 blikken en 300 flessen</strong></p>
+      <p class="hero-note">Oogst november 2026 · <strong>deze persing: 120 karaffen en 300 flessen</strong></p>
     </div>
     <div class="specs reveal" aria-label="Specificaties">
       <div class="spec"><span class="spec-k">Oogst</span><span class="spec-v">nov &rsquo;26</span></div>
@@ -429,12 +447,12 @@
   <div class="wrap">
     <span class="label reveal">Twee olies, geen keuzestress</span>
     <h2 class="reveal">Je hebt er maar <em>twee</em> nodig.</h2>
-    <p class="scarcity reveal">De eerste zending is &eacute;&eacute;n pallet uit Murcia: <strong>120 blikken en 300 literflessen</strong>. Reserveren kan <strong>t/m 9 november</strong>; dan gaat de bestelling naar het landgoed en is op echt op, tot de volgende persing.</p>
+    <p class="scarcity reveal">De eerste zending is &eacute;&eacute;n pallet uit Murcia: <strong>120 karaffen van 5 liter en 300 literflessen</strong>. Reserveren kan <strong>t/m 9 november</strong>; dan gaat de bestelling naar het landgoed en is op echt op, tot de volgende persing.</p>
     <div class="oils-grid">
       <div class="oil-card reveal">
-        <span class="oil-var">Picual · 5 liter blik</span>
+        <span class="oil-var">Picual · 5 liter karaf</span>
         <h3>De Peper</h3>
-        <p>Groen, intens, met die peperige afdronk. En van nature de meest hittestabiele olijfsoort die er is, dus je bakt en frituurt er net zo makkelijk in. Het blik dat in Spaanse keukens naast het fornuis staat.</p>
+        <p>Groen, intens, met die peperige afdronk. En van nature de meest hittestabiele olijfsoort die er is, dus je bakt en frituurt er net zo makkelijk in. De 5-literkaraf die in Spaanse keukens naast het fornuis staat.</p>
         <div class="oil-price"><span class="price">&euro; 89</span><span class="price-sub">&euro; 17,80 per liter · incl. btw en verzending</span></div>
         <a class="btn btn-buy" href="VERVANG-DOOR-BETAALLINK-PICUAL">Reserveer en betaal</a>
       </div>
@@ -451,13 +469,13 @@
       <div class="anchor-row">
         <div class="anchor"><span class="anchor-p">&plusmn; &euro; 10</span><span class="anchor-l">huismerk supermarkt, vaak ruim een jaar oud</span></div>
         <div class="anchor"><span class="anchor-p">&plusmn; &euro; 15</span><span class="anchor-l">merkfles supermarkt</span></div>
-        <div class="anchor anchor-us"><span class="anchor-p">&euro; 17,80</span><span class="anchor-l">dit blik, weken vers van de pers</span></div>
+        <div class="anchor anchor-us"><span class="anchor-p">&euro; 17,80</span><span class="anchor-l">deze karaf, weken vers van de pers</span></div>
         <div class="anchor"><span class="anchor-p">&euro; 40+</span><span class="anchor-l">premiumflessen speciaalzaak</span></div>
       </div>
-      <p class="anchors-note">En ja, 5 liter is veel. Goed nieuws: ongeopend is het blik anderhalf jaar houdbaar, en in een gemiddeld huishouden gaat het maanden mee.</p>
+      <p class="anchors-note">En ja, 5 liter is veel. Goed nieuws: ongeopend is de karaf anderhalf jaar houdbaar, en in een gemiddeld huishouden gaat het maanden mee.</p>
     </div>
     <div class="bundle reveal">
-      <p><strong>Het duo.</strong> Het blik Picual plus de liter Arbequina voor <strong>&euro; 115</strong>, met het oogstrapport van jouw batch erbij (de labwaarden, op papier) en voorrang op de volgende persing.</p>
+      <p><strong>Het duo.</strong> De karaf Picual plus de liter Arbequina voor <strong>&euro; 115</strong>, met het oogstrapport van jouw batch erbij (de labwaarden, op papier) en voorrang op de volgende persing.</p>
       <a class="cta-mini" href="VERVANG-DOOR-BETAALLINK-DUO">Reserveer het duo</a>
     </div>
     <p class="order-note reveal">Reserveren is meteen betalen. Wij bestellen bij het landgoed precies wat gereserveerd is en leveren binnen een paar weken na de persing. Komt de persing niet, dan krijg je je geld terug.</p>
@@ -509,12 +527,31 @@
 </section>
 
 <section class="b2b">
-  <div class="wrap b2b-row">
-    <div>
-      <span class="label reveal">Horeca &amp; inkoop</span>
-      <p class="b2b-text reveal">We leveren dezelfde persing ook aan restaurants, winkels en kantoren, in blikken van 1 en 5 liter rechtstreeks van het landgoed. Vraag de prijslijst en een sample aan.</p>
+  <div class="wrap">
+    <div class="b2b-grid">
+      <div>
+        <span class="label reveal">Horeca &amp; inkoop</span>
+        <h2 class="reveal">Dezelfde persing, in <em>elk</em> formaat.</h2>
+        <p class="b2b-text reveal">Voor restaurants, delicatessenwinkels en kantoren leveren we rechtstreeks van het landgoed, gebotteld op bestelling. Vraag de prijslijst met staffels aan; een sample sturen we mee.</p>
+        <ul class="b2b-formats reveal">
+          <li><span>Glazen fles</span><span>25 en 50 cl, voor tafel en schap</span></li>
+          <li><span>PET-fles</span><span>50 cl en 1 liter</span></li>
+          <li><span>Karaf</span><span>5 liter, het keukenformaat</span></li>
+          <li><span>Blik</span><span>1 en 5 liter, lithografisch bedrukt</span></li>
+        </ul>
+        <a class="cta-mini reveal" href="mailto:zakelijk@voorbeeld.nl?subject=Prijslijst%20en%20sample">Vraag de prijslijst aan</a>
+      </div>
+      <div class="b2b-photos reveal">
+        <figure class="packshot">
+          <img src="assets/assortiment.jpg" alt="Het assortiment van het landgoed: blikken van 5 en 1 liter en de karaf van 5 liter" width="900" height="659" loading="lazy">
+          <figcaption>Blikken en de 5-literkaraf</figcaption>
+        </figure>
+        <figure class="packshot">
+          <img src="assets/flessen.jpg" alt="Glazen flessen van de Constitucion-topselectie met geschenkkoker" width="660" height="563" loading="lazy">
+          <figcaption>Glazen flessen en geschenkkoker</figcaption>
+        </figure>
+      </div>
     </div>
-    <a class="cta-mini reveal" href="mailto:zakelijk@voorbeeld.nl?subject=Prijslijst%20en%20sample">Vraag de prijslijst aan</a>
   </div>
 </section>
 

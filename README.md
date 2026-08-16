@@ -21,7 +21,7 @@ Pages).
 - **Zakelijk e-mailadres**: de B2B-knop verwijst naar `zakelijk@voorbeeld.nl`; vervang
   door het echte adres.
 - **Oogstdata, aantallen en deadline**: plaatshouderwaarden die je moet invullen zodra
-  ze vaststaan: oogst november 2026, "120 blikken en 300 literflessen" (de echte
+  ze vaststaan: oogst november 2026, "120 karaffen en 300 literflessen" (de echte
   pallet-inhoud) en de besteldeadline "t/m 9 november" (de datum waarop je de
   palletorder naar het landgoed stuurt). Ze staan in de hero en in de productsectie.
 - **Duo-bonus**: het duo belooft een oogstrapport met labwaarden per batch; vraag dat

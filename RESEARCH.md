@@ -75,7 +75,7 @@ Aangeleverde inkoopprijzen: 5L Picual €30, 1L Arbequina €7, beide exclusief 
 Vervoer bestaat uit twee delen die je apart moet bekijken:
 
 - **Spanje naar NL**: groupage kost per pallet grofweg €45 tot €220. Eén pallet draagt
-  ruwweg 100+ blikken van 5L, dus geconsolideerd is dit €1 tot €3 per product. De
+  ruwweg 100+ karaffen van 5L, dus geconsolideerd is dit €1 tot €3 per product. De
   aanname "€10 vervoer per product" klopt alleen als je per stuk laat verzenden; dat
   moet je dus nooit doen. Reserveringen bundelen tot één palletzending per persing.
 - **NL-bezorging (de echte kostenpost)**: een PostNL-pakket tot 10 kg kost €8,25
@@ -83,24 +83,26 @@ Vervoer bestaat uit twee delen die je apart moet bekijken:
 
 | Product | Prijs incl. btw en verzending | Omzet ex btw | Geschatte kosten | Marge |
 |---|---|---|---|---|
-| Picual 5L blik | €89,00 | €81,65 | €41,60 (30 inkoop + 2 pallet + 8,25 pakket + 1 doos + 0,35 betaalfee) | ~€40,00 (49%) |
+| Picual 5L karaf (PET) | €89,00 | €81,65 | €41,60 (30 inkoop + 2 pallet + 8,25 pakket + 1 doos + 0,35 betaalfee) | ~€40,00 (49%) |
 | Arbequina 1L | €34,95 | €32,06 | €17,05 (7 + 1 + 8,25 + 0,50 + 0,30) | ~€15,00 (47%) |
 | Duo (5L + 1L) | €115,00 | €105,50 | €49,65 (37 + 3 + 8,25 + 1 + 0,40) | ~€55,85 (53%) |
 
 Prijsonderbouwing: mid-premium single estate zit op €20 tot €30 per 500 ml, dus €40 tot
 €60 per liter voor flessen. Tegen stickerschok bij €89/€115 staat op de pagina een
 prijs-per-liter-anker: huismerk ±€10, merkfles ±€15 (AH Biologisch zit op €12,98 per
-liter), dit blik €17,80, premiumflessen €40+. Het blik zit dus een paar euro boven een
-supermarktmerkfles voor olie die maanden verser is; die vergelijking wint hij altijd. De Arbequina op €34,95 per liter zit daar nog onder en is
-dus marktconform voor vers-aan-de-bron. Het 5L-blik is als horecaformaat per liter
+liter), de karaf €17,80, premiumflessen €40+. De karaf zit dus een paar euro boven een
+supermarktmerkfles voor olie die maanden verser is; die vergelijking wint hij altijd.
+Let op: de Picual 5L is een PET-karaf, geen blik; de lithografische blikken (1L/5L)
+bevatten de Arbequina-blend. De Arbequina op €34,95 per liter zit daar nog onder en is
+dus marktconform voor vers-aan-de-bron. De 5L-karaf is als horecaformaat per liter
 altijd goedkoper; op €17,80 per liter blijft het spotgoedkoop vergeleken met
 premiumflessen en houdt het toch bijna 50% marge. De duo deelt één pakket en heeft
 daardoor de beste marge. Alle bedragen zijn een startpunt; de pallet- en pakketkosten
 moeten met echte offertes bevestigd worden.
 
 **B2B (horeca, delicatessenwinkels, kantoren): volume en cashflow.**
-Het landgoed levert al 1L- en 5L-blikken en 5L-karaffen; die formaten zijn gemaakt voor
-horeca. Tien restaurants die maandelijks bestellen geven meer omzet dan honderden losse
+Het landgoed levert het volledige assortiment: glas 25/50 cl, PET 50 cl/1L, de
+5L-karaf en blikken van 1L/5L; de grote formaten zijn gemaakt voor horeca. Tien restaurants die maandelijks bestellen geven meer omzet dan honderden losse
 flessen, tegen bijna nul marketingkosten. Marge is lager (30 tot 50%) maar de verkoop is
 voorspelbaar en herhaalt zichzelf. Start met een prijslijst-pdf en een samplebox; geen
 webshop nodig.
