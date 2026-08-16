@@ -142,6 +142,10 @@ door reserveringen gedekt is.
 
 - **Naam**: "BRON" is een werktitel (past bij "direct bij de bron") en overal in één keer vervangbaar.
 - **Oogstdatum**: de pagina gaat uit van oogst november 2026; invullen zodra bekend.
+  Let op: op de flessen en blikken staat alleen de THT, geen oogstdatum. De pagina
+  belooft daarom de oogst- en persdatum "bij elke bestelling" (bevestigingsmail of
+  kaartje in de doos). Een eigen oogstdatum-sticker per zending is een goedkope upgrade
+  die de sterkere claim "oogstdatum op elke fles" alsnog waar zou maken.
 - **Betaallinks**: drie placeholders in `index.html` (Picual, Arbequina, duo) vervangen
   door echte Mollie- of Stripe-betaallinks met iDEAL.
 - **Vervoersoffertes**: pallet Spanje-NL en pakkettarief NL opvragen; de marges in de
