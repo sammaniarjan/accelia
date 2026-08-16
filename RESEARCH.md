@@ -130,6 +130,12 @@ door reserveringen gedekt is.
 - Aroma: tomaat(blad), groene appel, amandel, vers gras; zachte zoete start, peperige afdronk.
 - Gecertificeerde geïntegreerde teelt; kwaliteitskeurmerk regio Murcia.
 - Formaten: glas 25/50 cl, PET 50 cl/1L/5L, blik 1L/5L.
+- **Botteling (uit eigen inkoopervaring, niet uit de brochure)**: het landgoed bottelt op
+  bestelling uit de tank; THT is 1,5 jaar vanaf botteldatum. Een aankoop midden in het
+  jaar is dus olie van de vorige oogst, vers gebotteld. Gevolg voor de copy: claims als
+  "weken vers van de pers" gelden alleen voor bestellingen die met de oogst meelopen
+  (het voorbestelmodel); voor tussentijdse leveringen is de eerlijke claim "gebotteld op
+  bestelling, direct uit de tank".
 
 ## 7. Open punten
 
