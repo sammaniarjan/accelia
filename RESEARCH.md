@@ -88,7 +88,10 @@ Vervoer bestaat uit twee delen die je apart moet bekijken:
 | Duo (5L + 1L) | €115,00 | €105,50 | €49,65 (37 + 3 + 8,25 + 1 + 0,40) | ~€55,85 (53%) |
 
 Prijsonderbouwing: mid-premium single estate zit op €20 tot €30 per 500 ml, dus €40 tot
-€60 per liter voor flessen. De Arbequina op €34,95 per liter zit daar nog onder en is
+€60 per liter voor flessen. Tegen stickerschok bij €89/€115 staat op de pagina een
+prijs-per-liter-anker: huismerk ±€10, merkfles ±€15 (AH Biologisch zit op €12,98 per
+liter), dit blik €17,80, premiumflessen €40+. Het blik zit dus een paar euro boven een
+supermarktmerkfles voor olie die maanden verser is; die vergelijking wint hij altijd. De Arbequina op €34,95 per liter zit daar nog onder en is
 dus marktconform voor vers-aan-de-bron. Het 5L-blik is als horecaformaat per liter
 altijd goedkoper; op €17,80 per liter blijft het spotgoedkoop vergeleken met
 premiumflessen en houdt het toch bijna 50% marge. De duo deelt één pakket en heeft
