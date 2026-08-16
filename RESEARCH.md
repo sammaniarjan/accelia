@@ -126,7 +126,8 @@ door reserveringen gedekt is.
 - Familielandgoed in Alhama de Murcia, aan de rand van natuurpark Sierra Espuña; bomen sinds 1995, eigen molen op het erf sinds 1997.
 - Zelfde dag geplukt en geperst; koude extractie, korte kneedtijd; opslag in rvs-tanks; eigen laboratorium.
 - Rassen: Picual en Arbequina (aanvullend Koroneiki, Arbusana).
-- Zuurgraad max. 0,2% (topselectie; de EU-grens voor extra vergine is 0,8%).
+- Zuurgraad: max. 0,4% voor de standaardlijn (de pagina gebruikt deze waarde); alleen de
+  "Constitución"-topselectie haalt max. 0,2%. De EU-grens voor extra vergine is 0,8%.
 - Aroma: tomaat(blad), groene appel, amandel, vers gras; zachte zoete start, peperige afdronk.
 - Gecertificeerde geïntegreerde teelt; kwaliteitskeurmerk regio Murcia.
 - Formaten: glas 25/50 cl, PET 50 cl/1L/5L, blik 1L/5L.
