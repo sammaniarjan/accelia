@@ -143,6 +143,12 @@ door reserveringen gedekt is.
 - **E-mailprovider en zakelijk e-mailadres**: formulier en B2B-knop hebben placeholder-hooks.
 - **Herroepingsrecht en voorwaarden**: bij vooruitbetaling horen duidelijke levertermijnen
   en een geld-terug-belofte op de pagina (staat er nu als één zin bij de productkaarten).
+- **Salesmechanieken (Voss/Hormozi), bewust gekozen**: gekwantificeerde schaarste
+  (pallet-aantallen), een echte besteldeadline (palletorderdatum), en een waardestapel op
+  het duo (oogstrapport + voorrang) in plaats van korting. Een proef-garantie ("smaakt
+  niet beter, geld terug") is bewust afgewezen vanwege misbruikrisico; alleen de
+  leveringsgarantie blijft. Aantallen en deadline zijn placeholders tot de echte
+  palletorder vaststaat.
 
 Bronnen: zie o.a. de Shopify-case over Citizens of Soil, Brand Vision en Forbes over
 Graza, FoodNavigator over Brightland, EUR-Lex 432/2012, spanish-oil.com en Casa del
