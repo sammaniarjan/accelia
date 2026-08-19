@@ -235,6 +235,13 @@
   .oil-var { font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
   .oil-card h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); margin: 12px 0 18px; }
   .oil-card p { color: var(--cream-dim); font-size: 16px; max-width: 44ch; }
+  .lock {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--gold); border: 1px solid rgba(216,169,60,.45); border-radius: 999px;
+    padding: 13px 24px;
+  }
+  .lock::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
   .oil-price { margin: 28px 0 22px; display: flex; flex-direction: column; gap: 4px; }
   .price { font-family: var(--serif); font-size: clamp(30px, 3vw, 40px); color: var(--cream); }
   .price-sub { font-size: 13px; color: var(--cream-dim); }
@@ -264,6 +271,8 @@
   }
   .bundle .cta-mini:hover { background: var(--cream); color: var(--ink); }
   .order-note { margin-top: 28px; font-size: 14px; color: var(--cream-dim); max-width: 62ch; }
+  .order-note strong { color: var(--cream); font-weight: 500; }
+  .order-note a { color: var(--green-bright); }
 
   /* ---------- proof ---------- */
   .proof { padding: clamp(90px, 14vh, 160px) 0; background: var(--deep); }
@@ -345,7 +354,7 @@
 
 <nav>
   <a class="logo" href="#top">BRON<span>.</span></a>
-  <a class="cta-mini" href="#reserveer">Reserveer de oogst</a>
+  <a class="cta-mini" href="#oogstbericht">Kom op de wachtlijst</a>
 </nav>
 
 <header id="top">
@@ -356,8 +365,8 @@
       <p>Supermarktolie ligt vaak meer dan een jaar in tanks en op schappen voordat jij hem koopt. Wij kopen direct bij de pers van één Spaans landgoed. Geplukt en koud geperst op dezelfde dag.</p>
     </div>
     <div class="hero-row reveal">
-      <a class="btn" href="#reserveer">Reserveer de nieuwe oogst</a>
-      <p class="hero-note">Oogst november 2026 · <strong>deze persing: 120 karaffen en 300 flessen</strong></p>
+      <a class="btn" href="#reserveer">Bekijk de oogst</a>
+      <p class="hero-note">Oogst november 2026 · <strong>op uitnodiging · 120 karaffen en 300 flessen</strong></p>
     </div>
     <div class="specs reveal" aria-label="Specificaties">
       <div class="spec"><span class="spec-k">Oogst</span><span class="spec-v">nov &rsquo;26</span></div>
@@ -447,21 +456,21 @@
   <div class="wrap">
     <span class="label reveal">Twee olies, geen keuzestress</span>
     <h2 class="reveal">Je hebt er maar <em>twee</em> nodig.</h2>
-    <p class="scarcity reveal">De eerste zending is &eacute;&eacute;n pallet uit Murcia: <strong>120 karaffen van 5 liter en 300 literflessen</strong>. Reserveren kan <strong>t/m 9 november</strong>; dan gaat de bestelling naar het landgoed en is op echt op, tot de volgende persing.</p>
+    <p class="scarcity reveal">De eerste zending is &eacute;&eacute;n pallet uit Murcia: <strong>120 karaffen van 5 liter en 300 literflessen</strong>, en reserveren kan alleen met een persoonlijke uitnodiging, <strong>t/m 9 november</strong>. Dan gaat de bestelling naar het landgoed en is op echt op, tot de volgende persing.</p>
     <div class="oils-grid">
       <div class="oil-card reveal">
         <span class="oil-var">Picual · 5 liter karaf</span>
         <h3>De Peper</h3>
         <p>Groen, intens, met die peperige afdronk. En van nature de meest hittestabiele olijfsoort die er is, dus je bakt en frituurt er net zo makkelijk in. De 5-literkaraf die in Spaanse keukens naast het fornuis staat.</p>
         <div class="oil-price"><span class="price">&euro; 89</span><span class="price-sub">&euro; 17,80 per liter · incl. btw en verzending</span></div>
-        <a class="btn btn-buy" href="VERVANG-DOOR-BETAALLINK-PICUAL">Reserveer en betaal</a>
+        <span class="lock">Alleen met uitnodiging</span>
       </div>
       <div class="oil-card reveal">
         <span class="oil-var">Arbequina · 1 liter</span>
         <h3>De Zachte</h3>
         <p>Zoet en soepel, amandel en groene appel. Voor dressings, zacht bakken en alles waar de olie niet moet overheersen. Het maatje voor op het aanrecht.</p>
         <div class="oil-price"><span class="price">&euro; 34,95</span><span class="price-sub">incl. btw en verzending</span></div>
-        <a class="btn btn-buy" href="VERVANG-DOOR-BETAALLINK-ARBEQUINA">Reserveer en betaal</a>
+        <span class="lock">Alleen met uitnodiging</span>
       </div>
     </div>
     <div class="anchors reveal" aria-label="Prijs per liter vergeleken">
@@ -476,9 +485,9 @@
     </div>
     <div class="bundle reveal">
       <p><strong>Het duo.</strong> De karaf Picual plus de liter Arbequina voor <strong>&euro; 115</strong>, met het oogstrapport van jouw batch erbij (de labwaarden, op papier) en voorrang op de volgende persing.</p>
-      <a class="cta-mini" href="VERVANG-DOOR-BETAALLINK-DUO">Reserveer het duo</a>
+      <span class="lock">Alleen met uitnodiging</span>
     </div>
-    <p class="order-note reveal">Reserveren is meteen betalen. Wij bestellen bij het landgoed precies wat gereserveerd is en leveren binnen een paar weken na de persing. Komt de persing niet, dan krijg je je geld terug.</p>
+    <p class="order-note reveal">Zo werkt het: in je uitnodiging staat een persoonlijke reserveerlink, en reserveren is meteen betalen. Wie reserveert, krijgt <strong>drie uitnodigingen</strong> om weg te geven. Wij bestellen bij het landgoed precies wat gereserveerd is en leveren binnen een paar weken na de persing. Komt de persing niet, dan krijg je je geld terug. Geen uitnodiging? <a href="#oogstbericht">De wachtlijst is de achterdeur.</a></p>
   </div>
 </section>
 
@@ -514,15 +523,15 @@
 
 <section class="signup" id="oogstbericht">
   <div class="wrap">
-    <span class="label reveal">Het oogstbericht</span>
-    <h2 class="reveal">Nog niet klaar om te bestellen? Volg de <em>oogst.</em></h2>
-    <p class="sub reveal">Laat je e-mailadres achter en krijg het oogstbericht uit Murcia: wanneer er geplukt wordt, wanneer de molen draait en wanneer de volgende persing te reserveren is.</p>
+    <span class="label reveal">Geen uitnodiging?</span>
+    <h2 class="reveal">De wachtlijst is de <em>achterdeur.</em></h2>
+    <p class="sub reveal">Laat je e-mailadres achter. Komt er ruimte vrij in deze persing, of start de volgende, dan krijg jij als eerste een uitnodiging. Tot die tijd sturen we het oogstbericht uit Murcia: wanneer er geplukt wordt en wanneer de molen draait.</p>
     <form class="reveal" id="waitlist" autocomplete="email">
       <input type="email" name="email" placeholder="jouw@email.nl" required aria-label="E-mailadres">
-      <button class="btn" type="submit">Houd me op de hoogte</button>
+      <button class="btn" type="submit">Zet mij op de wachtlijst</button>
     </form>
-    <p class="form-note reveal">Geen nieuwsbriefspam. Alleen bericht als er geperst is.</p>
-    <p class="form-ok" id="form-ok">Je staat op de lijst. Tot bij de eerste persing.</p>
+    <p class="form-note reveal">Geen nieuwsbriefspam. Alleen bericht als er geperst is of als er een uitnodiging voor je klaarligt.</p>
+    <p class="form-ok" id="form-ok">Je staat op de wachtlijst. We melden ons zodra er een uitnodiging voor je is.</p>
   </div>
 </section>
 
@@ -532,7 +541,7 @@
       <div>
         <span class="label reveal">Horeca &amp; inkoop</span>
         <h2 class="reveal">Dezelfde persing, in <em>elk</em> formaat.</h2>
-        <p class="b2b-text reveal">Voor restaurants, delicatessenwinkels en kantoren leveren we rechtstreeks van het landgoed, gebotteld op bestelling. Vraag de prijslijst met staffels aan; een sample sturen we mee.</p>
+        <p class="b2b-text reveal">Voor restaurants, delicatessenwinkels en kantoren leveren we rechtstreeks van het landgoed, gebotteld op bestelling, zonder uitnodiging. Vraag de prijslijst met staffels aan; een sample sturen we mee.</p>
         <ul class="b2b-formats reveal">
           <li><span>Glazen fles</span><span>25 en 50 cl, voor tafel en schap</span></li>
           <li><span>PET-fles</span><span>50 cl en 1 liter</span></li>

@@ -156,6 +156,13 @@ door reserveringen gedekt is.
 - **E-mailprovider en zakelijk e-mailadres**: formulier en B2B-knop hebben placeholder-hooks.
 - **Herroepingsrecht en voorwaarden**: bij vooruitbetaling horen duidelijke levertermijnen
   en een geld-terug-belofte op de pagina (staat er nu als één zin bij de productkaarten).
+- **Invite-only (eerste persing)**: reserveren kan alleen met een persoonlijke
+  uitnodiging; wie koopt krijgt er drie om weg te geven; de wachtlijst is de open
+  achterdeur en de bron voor nieuwe uitnodigingen; B2B blijft open. Voorwaarden waar
+  dit model op staat of valt: (1) een eerste ring van honderden warme contacten, anders
+  raakt de pallet niet uitverkocht; (2) uitnodigingen gekoppeld houden aan aankopen,
+  anders wordt exclusiviteit een gimmick; (3) de besteldeadline als kill-switch: loopt
+  het stroef, dan gaat de verkoop alsnog open.
 - **Salesmechanieken (Voss/Hormozi), bewust gekozen**: gekwantificeerde schaarste
   (pallet-aantallen), een echte besteldeadline (palletorderdatum), en een waardestapel op
   het duo (oogstrapport + voorrang) in plaats van korting. Een proef-garantie ("smaakt
