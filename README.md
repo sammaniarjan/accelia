@@ -1,43 +1,68 @@
-# BRON, landingspagina (werktitel)
+# BRON, webshop op uitnodiging (werktitel)
 
-Pre-launch landingspagina voor een webshop in ultra-verse, single-estate Spaanse
-olijfolie (Picual en Arbequina), direct bij de pers ingekocht bij Hacienda San Miguel,
-Alhama de Murcia. Naast de consumentenverkoop is er een B2B-blok voor horeca en winkels.
+Pre-launch site voor een webshop in ultra-verse, single-estate Spaanse olijfolie
+(Picual en Arbequina), direct bij de pers ingekocht bij Hacienda San Miguel, Alhama de
+Murcia. De eerste persing is op uitnodiging; het backend (Supabase + Mollie) beheert
+codes, bestellingen en de wachtlijst.
 
-## Stack
+## Structuur
 
-Eén statisch bestand: `index.html`. Geen build, geen dependencies. Open het bestand in
-de browser of host het op elke statische host (Netlify, Vercel, GitHub Pages, Cloudflare
-Pages).
+| Bestand | Doel |
+|---|---|
+| `index.html` | Landingspagina: hero, why, producten met uitnodigingscode, wachtlijst |
+| `verhaal.html` | Het landgoed: proces, tijdlijn, smaak, cijfers, foto's |
+| `zakelijk.html` | Horeca en inkoop: formaten, prijslijst-CTA |
+| `bedankt.html` | Retourpagina na betaling (noindex) |
+| `assets/site.css`, `assets/site.js` | Gedeelde stijl en scripts |
+| `supabase/migrations/0001_init.sql` | Database: waitlist, invite_codes, orders |
+| `supabase/functions/*` | Edge functions: wachtlijst, codevalidatie, Mollie |
+| `RESEARCH.md` | Marktonderzoek en genomen beslissingen |
 
-## Aanpassen
+Frontend is statisch (geen build); host op Netlify, Vercel, Cloudflare Pages of
+GitHub Pages.
 
-- **Naam**: "BRON" is een werktitel; zoek en vervang in `index.html`.
-- **Uitnodigingsflow**: de pagina toont prijzen maar geen koopknoppen; reserveren kan
-  alleen via de persoonlijke reserveerlink in een uitnodigingsmail. Zo werkt het:
-  1. Maak in Mollie of Stripe drie betaallinks aan (iDEAL): Picual 5L (€89),
-     Arbequina 1L (€34,95) en het duo (€115). Deze links staan bewust NIET op de
-     pagina; ze gaan alleen in uitnodigingsmails.
-  2. Stuur de eerste ring uitnodigingen zelf (drie per persoon).
-  3. Zet in elke besteld-bevestigingsmail drie nieuwe uitnodigingen ("stuur deze mail
-     door"). Wie koopt, kan dus drie mensen binnenbrengen.
-  4. Loopt de verkoop stroef richting de deadline, zet de betaallinks dan alsnog op de
-     knoppen (de lock-badges in `index.html` vervangen door `.btn`-links); de deadline
-     is de natuurlijke kill-switch van het invite-mechanisme.
-  Wachtlijst-aanmeldingen (het formulier) zijn de bron voor uitnodigingen bij ruimte of
-  bij de volgende persing. B2B loopt buiten de uitnodigingen om.
-- **E-mailformulier**: het script onderaan `index.html` bevat een `TODO`; koppel daar
-  Formspree, MailerLite of een eigen endpoint aan.
-- **Zakelijk e-mailadres**: de B2B-knop verwijst naar `zakelijk@voorbeeld.nl`; vervang
-  door het echte adres.
-- **Oogstdata, aantallen en deadline**: plaatshouderwaarden die je moet invullen zodra
-  ze vaststaan: oogst november 2026, "120 karaffen en 300 literflessen" (de echte
-  pallet-inhoud) en de besteldeadline "t/m 9 november" (de datum waarop je de
-  palletorder naar het landgoed stuurt). Ze staan in de hero en in de productsectie.
-- **Duo-bonus**: het duo belooft een oogstrapport met labwaarden per batch; vraag dat
-  rapport op bij het landgoed (ze hebben een eigen laboratorium).
+## Backend opzetten (Supabase + Mollie), ~30 minuten
+
+1. **Supabase-project aanmaken** op supabase.com (gratis tier volstaat).
+2. **Database**: plak `supabase/migrations/0001_init.sql` in de SQL Editor en voer uit.
+   Dit maakt de tabellen, RLS en 30 startcodes (pas het aantal onderin aan).
+3. **Edge functions deployen** (met de [Supabase CLI](https://supabase.com/docs/guides/functions)):
+   `supabase functions deploy join-waitlist validate-invite create-payment mollie-webhook --no-verify-jwt`
+4. **Secrets zetten** (Dashboard > Edge Functions > Secrets):
+   - `MOLLIE_API_KEY`: van mollie.com (start met de test-key, ga live na een testbetaling)
+   - `SITE_URL`: je domein, bijv. `https://jouwdomein.nl`
+   - optioneel `RESEND_API_KEY` en `MAIL_FROM` voor automatische mails met de drie
+     nieuwe codes per koper; zonder deze key staan de codes in de tabel
+     `invite_codes` (kolom `issued_to_email`) en mail je ze zelf
+5. **Frontend koppelen**: zet in `assets/site.js` de constante `FUNCTIONS_BASE` op
+   `https://<project-ref>.supabase.co/functions/v1`. Tot die tijd draait de site in
+   demomodus (formulieren doen alsof).
+
+## Hoe het invite-systeem werkt
+
+- Startcodes (`source='seed'`) stuur je zelf naar je eerste ring, drie per persoon.
+- Een bezoeker voert de code in op de landingspagina; na validatie verschijnen de
+  bestelformulieren. Betaling loopt via Mollie (iDEAL).
+- Bij een betaalde bestelling markeert de webhook de code als gebruikt en maakt hij
+  drie nieuwe codes aan voor de koper (automatisch gemaild via Resend, of handmatig).
+- Codes zijn eenmalig geldig. Wachtlijst-mails staan in de tabel `waitlist`; nodig ze
+  uit door een seed-code te sturen en `invited_at` te zetten.
+- **Admin**: het Supabase-dashboard is je admin. Table Editor voor bestellingen, codes
+  en wachtlijst; de view `admin_overview` geeft totalen (betaald, omzet, openstaand).
+- **Kill-switch**: loopt de verkoop stroef richting de deadline, deel dan seed-codes
+  ruimhartig uit (bijv. aan de hele wachtlijst); het systeem zelf hoeft niet om.
+
+## Nog invullen
+
+- **Naam**: "BRON" is een werktitel; zoek en vervang in de HTML-bestanden.
+- **Domein**: vervang `VERVANG-DOOR-DOMEIN` in `robots.txt` en `sitemap.xml`.
+- **Zakelijk e-mailadres**: vervang `zakelijk@voorbeeld.nl` in `zakelijk.html` en
+  `index.html`.
+- **Aantallen en deadline**: "120 karaffen en 300 literflessen" en "t/m 9 november"
+  zijn placeholders tot de echte palletorder vaststaat.
+- **Oogstrapport (duo-bonus)**: opvragen bij het landgoed (eigen laboratorium).
 
 ## Onderbouwing
 
 Zie `RESEARCH.md` voor het marktonderzoek (positionering, conversiepatronen,
-prijsbenchmarks, kanaalstrategie) waarop de pagina-opbouw en copy gebaseerd zijn.
+prijsbenchmarks, kanaalstrategie, invite-mechaniek) achter de opbouw en copy.

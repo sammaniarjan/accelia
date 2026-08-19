@@ -3,366 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRON · Olijfolie van één landgoed</title>
-<meta name="description" content="Extra vergine olijfolie, dezelfde dag geplukt en koud geperst op één landgoed in Murcia. Direct bij de bron ingekocht. Bij elke bestelling de oogstdatum van jouw batch.">
+<title>BRON · Verse olijfolie van één landgoed, op uitnodiging</title>
+<meta name="description" content="Extra vergine olijfolie van één Spaans landgoed, dezelfde dag geplukt en koud geperst. Reserveer de nieuwe oogst op uitnodiging; bij elke bestelling de oogstdatum van jouw batch.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #101408;
-    --deep: #151a0b;
-    --cream: #f4efe3;
-    --cream-dim: #cfc8b4;
-    --green: #9dbf3b;
-    --green-bright: #c6e455;
-    --gold: #d8a93c;
-    --serif: "Fraunces", Georgia, serif;
-    --sans: "Inter", -apple-system, "Helvetica Neue", sans-serif;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--ink);
-    color: var(--cream);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-  ::selection { background: var(--green); color: var(--ink); }
-
-  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
-
-  /* ---------- nav ---------- */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 20px clamp(20px, 5vw, 64px);
-    mix-blend-mode: difference;
-  }
-  .logo {
-    font-family: var(--serif); font-weight: 600; font-size: 22px;
-    letter-spacing: 0.14em; color: var(--cream); text-decoration: none;
-  }
-  .logo span { color: var(--green-bright); }
-  nav a.cta-mini {
-    font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--cream); text-decoration: none; border: 1px solid rgba(244,239,227,.4);
-    padding: 10px 18px; border-radius: 999px; transition: all .25s ease;
-  }
-  nav a.cta-mini:hover { background: var(--cream); color: #000; }
-
-  /* ---------- hero ---------- */
-  header {
-    min-height: 100svh;
-    display: flex; flex-direction: column; justify-content: flex-end;
-    position: relative;
-    padding-top: 110px;
-    padding-bottom: clamp(48px, 8vh, 96px);
-    background:
-      radial-gradient(ellipse 90% 60% at 75% -10%, rgba(157,191,59,0.22), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 15% 110%, rgba(216,169,60,0.10), transparent 60%),
-      var(--ink);
-  }
-  header::after { /* grain */
-    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0 0.85 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
-  .kicker {
-    font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--green-bright); margin-bottom: 28px;
-  }
-  h1 {
-    font-family: var(--serif); font-weight: 400;
-    font-size: clamp(44px, 8.2vw, 118px);
-    line-height: 1.02; letter-spacing: -0.015em;
-    max-width: 15ch;
-  }
-  h1 em { font-style: italic; color: var(--green-bright); }
-  .hero-sub {
-    margin-top: 36px; max-width: 46ch; font-size: clamp(17px, 1.6vw, 20px);
-    color: var(--cream-dim);
-    display: flex; flex-direction: column; gap: 6px;
-  }
-  .hero-row { margin-top: 44px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
-  .btn {
-    display: inline-block; font-family: var(--sans); font-weight: 600; font-size: 15px;
-    letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none;
-    background: var(--green-bright); color: var(--ink);
-    padding: 18px 36px; border-radius: 999px; border: none; cursor: pointer;
-    transition: transform .2s ease, background .2s ease;
-  }
-  .btn:hover { transform: translateY(-2px); background: var(--cream); }
-  .hero-note { font-size: 14px; color: var(--cream-dim); }
-  .hero-note strong { color: var(--cream); }
-  .specs {
-    margin-top: 56px; display: flex; gap: 0; flex-wrap: wrap;
-    border-top: 1px solid rgba(244,239,227,.16);
-  }
-  .spec {
-    flex: 1 1 140px; padding: 18px 24px 0 0; display: flex; flex-direction: column; gap: 2px;
-  }
-  .spec + .spec { border-left: 1px solid rgba(244,239,227,.16); padding-left: 24px; }
-  @media (max-width: 640px) {
-    .spec + .spec { border-left: none; padding-left: 0; }
-    .spec { flex: 1 1 40%; }
-  }
-  .spec-k { font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--cream-dim); }
-  .spec-v { font-family: var(--serif); font-size: 20px; color: var(--cream); }
-
-  /* ---------- marquee ---------- */
-  .marquee {
-    border-top: 1px solid rgba(244,239,227,.12); border-bottom: 1px solid rgba(244,239,227,.12);
-    overflow: hidden; white-space: nowrap; padding: 18px 0; background: var(--deep);
-  }
-  .marquee-inner { display: inline-block; animation: slide 30s linear infinite; }
-  .marquee span {
-    font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--cream-dim);
-    margin-right: 24px;
-  }
-  .marquee b { color: var(--green-bright); font-weight: 400; margin-right: 24px; }
-  @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  @media (prefers-reduced-motion: reduce) {
-    .marquee-inner { animation: none; }
-    html { scroll-behavior: auto; }
-  }
-
-  /* ---------- why ---------- */
-  .why { padding: clamp(90px, 14vh, 160px) 0; }
-  h2 {
-    font-family: var(--serif); font-weight: 400;
-    font-size: clamp(34px, 4.6vw, 62px); line-height: 1.08; letter-spacing: -0.01em;
-    max-width: 22ch; margin-bottom: clamp(48px, 8vh, 88px);
-  }
-  h2 em { font-style: italic; color: var(--green-bright); }
-  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
-  @media (max-width: 860px) { .why-grid { grid-template-columns: 1fr; } }
-  .why-item { border-top: 1px solid rgba(244,239,227,.18); padding-top: 28px; }
-  .why-num {
-    font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--gold);
-    display: block; margin-bottom: 18px;
-  }
-  .why-item h3 { font-family: var(--serif); font-weight: 500; font-size: 26px; margin-bottom: 14px; line-height: 1.2; }
-  .why-item p { color: var(--cream-dim); font-size: 16px; }
-
-  /* ---------- photos ---------- */
-  .photoband { position: relative; overflow: hidden; background: var(--deep); }
-  .photoband img {
-    display: block; width: 100%; height: clamp(300px, 52vh, 540px); object-fit: cover;
-  }
-  .photoband::after {
-    content: ""; position: absolute; inset: 0; pointer-events: none;
-    background:
-      linear-gradient(to top, rgba(16,20,8,.6), transparent 38%),
-      linear-gradient(to bottom, rgba(16,20,8,.28), transparent 22%);
-  }
-  .photoband-cap {
-    position: absolute; left: clamp(20px, 5vw, 64px); bottom: 22px; z-index: 1;
-    font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
-    color: var(--cream); opacity: .92;
-  }
-  .why-head {
-    display: grid; grid-template-columns: 1fr minmax(200px, 280px);
-    gap: clamp(32px, 5vw, 72px); align-items: end;
-    margin-bottom: clamp(48px, 8vh, 88px);
-  }
-  .why-head h2 { margin-bottom: 0; }
-  .why-olijven { border-radius: 8px; overflow: hidden; }
-  .why-olijven img { display: block; width: 100%; height: 100%; max-height: 340px; object-fit: cover; }
-  @media (max-width: 860px) {
-    .why-head { grid-template-columns: 1fr; }
-    .why-olijven { max-width: 300px; }
-    .why-olijven img { max-height: 220px; }
-  }
-  .sensory-fig { margin-top: 40px; border-radius: 8px; overflow: hidden; }
-  .sensory-fig img { display: block; width: 100%; height: auto; }
-
-  /* ---------- timeline ---------- */
-  .timeline { padding: clamp(70px, 10vh, 120px) 0; background: var(--deep); border-top: 1px solid rgba(244,239,227,.1); }
-  .tl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; position: relative; }
-  @media (max-width: 860px) { .tl-grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 520px) { .tl-grid { grid-template-columns: 1fr; } }
-  .tl-step { position: relative; padding-top: 26px; }
-  .tl-step::before {
-    content: ""; position: absolute; top: 0; left: 0; right: -32px; height: 1px;
-    background: rgba(244,239,227,.2);
-  }
-  .tl-step::after {
-    content: ""; position: absolute; top: -4px; left: 0; width: 9px; height: 9px;
-    border-radius: 50%; background: var(--green-bright);
-  }
-  .tl-time { font-family: var(--serif); font-style: italic; font-size: 26px; color: var(--cream); display: block; margin-bottom: 10px; }
-  .tl-step p { font-size: 15px; color: var(--cream-dim); max-width: 26ch; }
-
-  /* ---------- sensory (light) ---------- */
-  .sensory { background: var(--cream); color: var(--ink); padding: clamp(90px, 14vh, 160px) 0; }
-  .sensory .label { color: #7a8b2e; }
-  .sensory h2 { color: var(--ink); max-width: 20ch; }
-  .sensory h2 em { color: #5f7a10; }
-  .sensory-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
-  @media (max-width: 860px) { .sensory-grid { grid-template-columns: 1fr; } }
-  .sensory p.lead { font-size: clamp(18px, 1.8vw, 22px); line-height: 1.55; color: #3a3f2a; max-width: 52ch; }
-  .sensory p.lead + p.lead { margin-top: 22px; }
-  .aromas { display: flex; flex-direction: column; gap: 0; }
-  .aroma {
-    display: flex; justify-content: space-between; align-items: baseline;
-    padding: 20px 0; border-bottom: 1px solid rgba(16,20,8,.15);
-  }
-  .aroma:first-child { border-top: 1px solid rgba(16,20,8,.15); }
-  .aroma .name { font-family: var(--serif); font-size: clamp(22px, 2.4vw, 30px); }
-  .aroma .tag { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: #7a8b2e; font-weight: 600; }
-  .label {
-    font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--green-bright); display: block; margin-bottom: 24px;
-  }
-
-  /* ---------- oils ---------- */
-  .oils { padding: clamp(90px, 14vh, 160px) 0; }
-  .scarcity {
-    margin: -24px 0 44px; max-width: 62ch; font-size: 16px; color: var(--cream-dim);
-  }
-  .scarcity strong { color: var(--green-bright); font-weight: 500; }
-  .oils-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-  @media (max-width: 760px) { .oils-grid { grid-template-columns: 1fr; } }
-  .oil-card {
-    border: 1px solid rgba(244,239,227,.18); border-radius: 8px; padding: 44px 40px;
-    background: linear-gradient(160deg, rgba(157,191,59,.07), transparent 55%);
-    transition: border-color .25s ease, transform .25s ease;
-  }
-  .oil-card:hover { border-color: var(--green-bright); transform: translateY(-4px); }
-  .oil-var { font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
-  .oil-card h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); margin: 12px 0 18px; }
-  .oil-card p { color: var(--cream-dim); font-size: 16px; max-width: 44ch; }
-  .lock {
-    display: inline-flex; align-items: center; gap: 10px;
-    font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-    color: var(--gold); border: 1px solid rgba(216,169,60,.45); border-radius: 999px;
-    padding: 13px 24px;
-  }
-  .lock::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
-  .oil-price { margin: 28px 0 22px; display: flex; flex-direction: column; gap: 4px; }
-  .price { font-family: var(--serif); font-size: clamp(30px, 3vw, 40px); color: var(--cream); }
-  .price-sub { font-size: 13px; color: var(--cream-dim); }
-  .btn-buy { padding: 15px 30px; font-size: 14px; }
-  .anchors { margin-top: 40px; }
-  .anchors-title { display: block; font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--cream); margin-bottom: 20px; }
-  .anchor-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; border: 1px solid rgba(244,239,227,.14); background: rgba(244,239,227,.14); }
-  @media (max-width: 760px) { .anchor-row { grid-template-columns: 1fr 1fr; } }
-  .anchor { background: var(--ink); padding: 20px 22px; display: flex; flex-direction: column; gap: 4px; }
-  .anchor-p { font-family: var(--serif); font-size: 26px; color: var(--cream-dim); }
-  .anchor-l { font-size: 13px; color: var(--cream-dim); }
-  .anchor-us { background: linear-gradient(160deg, rgba(157,191,59,.16), rgba(157,191,59,.04)); box-shadow: inset 0 0 0 1px var(--green-bright); }
-  .anchor-us .anchor-p { color: var(--green-bright); }
-  .anchor-us .anchor-l { color: var(--cream); }
-  .anchors-note { margin-top: 16px; font-size: 14px; color: var(--cream-dim); }
-  .bundle {
-    margin-top: 32px; border: 1px solid rgba(244,239,227,.18); border-radius: 8px;
-    padding: 24px 32px; display: flex; justify-content: space-between; align-items: center;
-    gap: 24px; flex-wrap: wrap;
-  }
-  .bundle p { color: var(--cream-dim); font-size: 16px; }
-  .bundle strong { color: var(--cream); font-weight: 500; }
-  .bundle .cta-mini {
-    font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--cream); text-decoration: none; border: 1px solid rgba(244,239,227,.4);
-    padding: 12px 22px; border-radius: 999px; transition: all .25s ease; white-space: nowrap;
-  }
-  .bundle .cta-mini:hover { background: var(--cream); color: var(--ink); }
-  .order-note { margin-top: 28px; font-size: 14px; color: var(--cream-dim); max-width: 62ch; }
-  .order-note strong { color: var(--cream); font-weight: 500; }
-  .order-note a { color: var(--green-bright); }
-
-  /* ---------- proof ---------- */
-  .proof { padding: clamp(90px, 14vh, 160px) 0; background: var(--deep); }
-  .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: rgba(244,239,227,.12); border: 1px solid rgba(244,239,227,.12); }
-  @media (max-width: 980px) { .proof-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 520px) { .proof-grid { grid-template-columns: 1fr; } }
-  .proof-cell { background: var(--deep); padding: 36px 28px; }
-  .proof-cell .big { font-family: var(--serif); font-size: clamp(34px, 3.6vw, 52px); line-height: 1; color: var(--cream); display: block; margin-bottom: 12px; }
-  .proof-cell .big i { font-style: italic; color: var(--green-bright); }
-  .proof-cell p { font-size: 14px; color: var(--cream-dim); }
-  .proof-foot { margin-top: 40px; font-size: 14px; color: var(--cream-dim); max-width: 62ch; }
-  .proof-foot strong { color: var(--cream); }
-
-  /* ---------- signup ---------- */
-  .signup { padding: clamp(100px, 16vh, 180px) 0; text-align: center; position: relative;
-    background:
-      radial-gradient(ellipse 70% 55% at 50% 120%, rgba(157,191,59,0.18), transparent 65%),
-      var(--ink);
-  }
-  .signup h2 { margin: 0 auto clamp(28px, 4vh, 40px); max-width: 18ch; }
-  .signup p.sub { color: var(--cream-dim); max-width: 44ch; margin: 0 auto 44px; }
-  form { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  input[type=email] {
-    background: transparent; border: 1px solid rgba(244,239,227,.35); border-radius: 999px;
-    color: var(--cream); font-family: var(--sans); font-size: 16px;
-    padding: 17px 26px; width: min(360px, 80vw); outline: none; transition: border .2s;
-  }
-  input[type=email]:focus { border-color: var(--green-bright); }
-  input::placeholder { color: rgba(244,239,227,.45); }
-  .form-note { margin-top: 18px; font-size: 13px; color: var(--cream-dim); }
-  .form-ok { margin-top: 24px; font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--green-bright); display: none; }
-
-  /* ---------- b2b ---------- */
-  .b2b { border-top: 1px solid rgba(244,239,227,.12); background: var(--deep); padding: clamp(70px, 11vh, 130px) 0; }
-  .b2b-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
-  @media (max-width: 860px) { .b2b-grid { grid-template-columns: 1fr; } }
-  .b2b .label { margin-bottom: 18px; }
-  .b2b h2 { font-size: clamp(30px, 3.6vw, 48px); margin-bottom: 28px; }
-  .b2b-text { color: var(--cream-dim); font-size: 16px; max-width: 52ch; margin-bottom: 32px; }
-  .b2b-formats { list-style: none; margin: 0 0 36px; }
-  .b2b-formats li {
-    display: flex; justify-content: space-between; gap: 24px; align-items: baseline;
-    padding: 14px 0; border-bottom: 1px solid rgba(244,239,227,.14); font-size: 15px;
-  }
-  .b2b-formats li:first-child { border-top: 1px solid rgba(244,239,227,.14); }
-  .b2b-formats li span:first-child { font-family: var(--serif); font-size: 19px; color: var(--cream); }
-  .b2b-formats li span:last-child { color: var(--cream-dim); text-align: right; }
-  .b2b-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  @media (max-width: 520px) { .b2b-photos { grid-template-columns: 1fr; } }
-  .packshot { background: var(--cream); border-radius: 8px; overflow: hidden; }
-  .packshot img { display: block; width: 100%; height: 240px; object-fit: contain; background: #fff; padding: 14px; }
-  .packshot figcaption {
-    padding: 12px 16px; font-size: 12px; font-weight: 600; letter-spacing: .1em;
-    text-transform: uppercase; color: #5a5f45;
-  }
-  .b2b a.cta-mini {
-    font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--cream); text-decoration: none; border: 1px solid rgba(244,239,227,.4);
-    padding: 12px 22px; border-radius: 999px; transition: all .25s ease; white-space: nowrap;
-  }
-  .b2b a.cta-mini:hover { background: var(--cream); color: var(--ink); }
-
-  /* ---------- footer ---------- */
-  footer {
-    border-top: 1px solid rgba(244,239,227,.12);
-    padding: 36px clamp(20px, 5vw, 64px);
-    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
-    font-size: 13px; color: var(--cream-dim);
-  }
-  footer .logo { font-size: 16px; }
-
-  /* ---------- reveal ---------- */
-  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
-  .reveal.on { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
 <nav>
-  <a class="logo" href="#top">BRON<span>.</span></a>
-  <a class="cta-mini" href="#oogstbericht">Kom op de wachtlijst</a>
+  <a class="logo" href="index.html">BRON<span>.</span></a>
+  <div class="nav-links">
+    <a class="nav-plain" href="verhaal.html">Het landgoed</a>
+    <a class="nav-plain" href="zakelijk.html">Zakelijk</a>
+    <a class="cta-mini" href="#oogstbericht">Kom op de wachtlijst</a>
+  </div>
 </nav>
 
-<header id="top">
+<header class="hero" id="top">
   <div class="wrap">
     <p class="kicker reveal">Extra vergine olijfolie · één landgoed · Murcia, Spanje</p>
-    <h1 class="reveal">De meeste olijfolie is <em>oud</em> voordat jij hem proeft.</h1>
+    <h1 class="display reveal">De meeste olijfolie is <em>oud</em> voordat jij hem proeft.</h1>
     <div class="hero-sub reveal">
-      <p>Supermarktolie ligt vaak meer dan een jaar in tanks en op schappen voordat jij hem koopt. Wij kopen direct bij de pers van één Spaans landgoed. Geplukt en koud geperst op dezelfde dag.</p>
+      <p>Supermarktolie ligt vaak meer dan een jaar in tanks en op schappen voordat jij hem koopt. Wij kopen direct bij de pers van &eacute;&eacute;n Spaans landgoed. Geplukt en koud geperst op dezelfde dag.</p>
     </div>
     <div class="hero-row reveal">
       <a class="btn" href="#reserveer">Bekijk de oogst</a>
@@ -372,7 +36,7 @@
       <div class="spec"><span class="spec-k">Oogst</span><span class="spec-v">nov &rsquo;26</span></div>
       <div class="spec"><span class="spec-k">Ras</span><span class="spec-v">Picual · Arbequina</span></div>
       <div class="spec"><span class="spec-k">Zuurgraad</span><span class="spec-v">&le; 0,4%</span></div>
-      <div class="spec"><span class="spec-k">Boom &rarr; fles</span><span class="spec-v">&lt; 24 uur</span></div>
+      <div class="spec"><span class="spec-k">Boom &rarr; pers</span><span class="spec-v">&lt; 24 uur</span></div>
     </div>
   </div>
 </header>
@@ -395,20 +59,21 @@
     <div class="why-grid">
       <div class="why-item reveal">
         <span class="why-num">01</span>
-        <h3>Eén landgoed, geen mengsel</h3>
-        <p>Alles komt van Hacienda San Miguel, een familielandgoed aan de rand van natuurpark Sierra Espuña. Eigen bomen en een eigen molen op het erf. Je kunt de herkomst gewoon opzoeken op de kaart.</p>
+        <h3>E&eacute;n landgoed, geen mengsel</h3>
+        <p>Alles komt van Hacienda San Miguel, een familielandgoed aan de rand van natuurpark Sierra Espu&ntilde;a. Eigen bomen, eigen molen op het erf.</p>
       </div>
       <div class="why-item reveal">
         <span class="why-num">02</span>
         <h3>Dezelfde dag geperst</h3>
-        <p>Olijven verliezen hun aroma al binnen een paar uur na de pluk. Hier gaan ze dezelfde dag de molen in: koude extractie, korte kneedtijd en meteen naar rvs-tanks in de kelder.</p>
+        <p>Olijven verliezen hun aroma al binnen een paar uur na de pluk. Hier gaan ze dezelfde dag de molen in: koude extractie, meteen de rvs-tank in.</p>
       </div>
       <div class="why-item reveal">
         <span class="why-num">03</span>
         <h3>Direct van de bron naar jou</h3>
-        <p>Wij kopen aan de pers en slaan de tussenhandel over. Daarom weten we van elke batch de oogst- en persdatum, en die krijg jij er bij je bestelling gewoon bij. De houdbaarheidsdatum op een supermarktfles verbergt juist hoe oud de olie is.</p>
+        <p>Wij kopen aan de pers en slaan de tussenhandel over. Bij elke bestelling krijg je de oogst- en persdatum van jouw batch.</p>
       </div>
     </div>
+    <p class="why-more reveal"><a href="verhaal.html">Lees het hele verhaal van het landgoed &rarr;</a></p>
   </div>
 </section>
 
@@ -417,46 +82,21 @@
   <span class="photoband-cap">Het landgoed bij Alhama de Murcia, Sierra Espu&ntilde;a op de achtergrond</span>
 </div>
 
-<section class="timeline" aria-label="Van boom tot fles">
-  <div class="wrap">
-    <span class="label reveal">Van boom tot fles</span>
-    <div class="tl-grid reveal">
-      <div class="tl-step"><span class="tl-time">07:00</span><p>Pluk in de ochtendkoelte, op het landgoed.</p></div>
-      <div class="tl-step"><span class="tl-time">+ 4 uur</span><p>De molen op het erf draait. Koude extractie, korte kneedtijd.</p></div>
-      <div class="tl-step"><span class="tl-time">&lt; 24 uur</span><p>In rvs-tanks, beschermd tegen licht en zuurstof.</p></div>
-      <div class="tl-step"><span class="tl-time">&plusmn; 2 wk</span><p>Gebotteld op het moment dat jij bestelt, niet maanden vooraf. Reserveringen van deze persing worden na de oogst gebotteld en binnen een paar weken geleverd.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="sensory">
-  <div class="wrap">
-    <span class="label reveal">De smaak</span>
-    <h2 class="reveal">Picual die naar de <em>boomgaard</em> ruikt.</h2>
-    <div class="sensory-grid">
-      <div class="reveal">
-        <p class="lead">Open de fles en je ruikt het meteen: tomatenblad, groene appel, vers gemaaid gras. De smaak begint zacht en zoet en eindigt met een peperige afdronk die kriebelt in je keel. Dat prikkelen komt door de polyfenolen, en daar zit alleen verse, vroeg geoogste olie vol mee.</p>
-        <p class="lead">Giet hem over brood, tomaten of een gebakken ei. En omdat Picual van nature zo stabiel is, kun je er net zo goed gewoon in bakken.</p>
-        <figure class="sensory-fig reveal">
-          <img src="assets/schenken.jpg" alt="Olijfolie wordt in een wit schaaltje geschonken" width="1200" height="976" loading="lazy">
-        </figure>
-      </div>
-      <div class="aromas reveal">
-        <div class="aroma"><span class="name">Tomatenblad</span><span class="tag">geur</span></div>
-        <div class="aroma"><span class="name">Groene appel</span><span class="tag">geur</span></div>
-        <div class="aroma"><span class="name">Vers gras</span><span class="tag">geur</span></div>
-        <div class="aroma"><span class="name">Amandel</span><span class="tag">smaak</span></div>
-        <div class="aroma"><span class="name">Peper</span><span class="tag">afdronk</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="oils" id="reserveer">
   <div class="wrap">
     <span class="label reveal">Twee olies, geen keuzestress</span>
     <h2 class="reveal">Je hebt er maar <em>twee</em> nodig.</h2>
     <p class="scarcity reveal">De eerste zending is &eacute;&eacute;n pallet uit Murcia: <strong>120 karaffen van 5 liter en 300 literflessen</strong>, en reserveren kan alleen met een persoonlijke uitnodiging, <strong>t/m 9 november</strong>. Dan gaat de bestelling naar het landgoed en is op echt op, tot de volgende persing.</p>
+
+    <div class="invite-panel reveal" id="invite-panel">
+      <p><strong>Heb je een uitnodiging?</strong> Voer je code in om te reserveren. Wie reserveert, krijgt drie codes om weg te geven.</p>
+      <form class="invite-form" id="invite-form">
+        <input name="code" placeholder="Uitnodigingscode, bijv. BRON-X4K2-9FQ1" autocomplete="off" aria-label="Uitnodigingscode" required>
+        <button class="cta-mini" type="submit">Controleer code</button>
+      </form>
+      <p class="invite-msg" id="invite-msg"></p>
+    </div>
+
     <div class="oils-grid">
       <div class="oil-card reveal">
         <span class="oil-var">Picual · 5 liter karaf</span>
@@ -464,6 +104,13 @@
         <p>Groen, intens, met die peperige afdronk. En van nature de meest hittestabiele olijfsoort die er is, dus je bakt en frituurt er net zo makkelijk in. De 5-literkaraf die in Spaanse keukens naast het fornuis staat.</p>
         <div class="oil-price"><span class="price">&euro; 89</span><span class="price-sub">&euro; 17,80 per liter · incl. btw en verzending</span></div>
         <span class="lock">Alleen met uitnodiging</span>
+        <form class="order-form" data-product="picual5l">
+          <input name="name_" placeholder="Naam" autocomplete="name" required>
+          <input name="email" type="email" placeholder="E-mailadres" autocomplete="email" required>
+          <input name="address" placeholder="Adres (straat, nr, postcode, plaats)" autocomplete="street-address" required>
+          <button class="btn" type="submit">Reserveer en betaal</button>
+          <p class="order-err"></p>
+        </form>
       </div>
       <div class="oil-card reveal">
         <span class="oil-var">Arbequina · 1 liter</span>
@@ -471,8 +118,16 @@
         <p>Zoet en soepel, amandel en groene appel. Voor dressings, zacht bakken en alles waar de olie niet moet overheersen. Het maatje voor op het aanrecht.</p>
         <div class="oil-price"><span class="price">&euro; 34,95</span><span class="price-sub">incl. btw en verzending</span></div>
         <span class="lock">Alleen met uitnodiging</span>
+        <form class="order-form" data-product="arbequina1l">
+          <input name="name_" placeholder="Naam" autocomplete="name" required>
+          <input name="email" type="email" placeholder="E-mailadres" autocomplete="email" required>
+          <input name="address" placeholder="Adres (straat, nr, postcode, plaats)" autocomplete="street-address" required>
+          <button class="btn" type="submit">Reserveer en betaal</button>
+          <p class="order-err"></p>
+        </form>
       </div>
     </div>
+
     <div class="anchors reveal" aria-label="Prijs per liter vergeleken">
       <span class="anchors-title">&euro; 89 klinkt als veel. Per liter ziet het er zo uit:</span>
       <div class="anchor-row">
@@ -483,43 +138,24 @@
       </div>
       <p class="anchors-note">En ja, 5 liter is veel. Goed nieuws: ongeopend is de karaf anderhalf jaar houdbaar, en in een gemiddeld huishouden gaat het maanden mee.</p>
     </div>
+
     <div class="bundle reveal">
       <p><strong>Het duo.</strong> De karaf Picual plus de liter Arbequina voor <strong>&euro; 115</strong>, met het oogstrapport van jouw batch erbij (de labwaarden, op papier) en voorrang op de volgende persing.</p>
-      <span class="lock">Alleen met uitnodiging</span>
-    </div>
-    <p class="order-note reveal">Zo werkt het: in je uitnodiging staat een persoonlijke reserveerlink, en reserveren is meteen betalen. Wie reserveert, krijgt <strong>drie uitnodigingen</strong> om weg te geven. Wij bestellen bij het landgoed precies wat gereserveerd is en leveren binnen een paar weken na de persing. Komt de persing niet, dan krijg je je geld terug. Geen uitnodiging? <a href="#oogstbericht">De wachtlijst is de achterdeur.</a></p>
-  </div>
-</section>
-
-<section class="proof">
-  <div class="wrap">
-    <span class="label reveal">De cijfers</span>
-    <div class="proof-grid reveal">
-      <div class="proof-cell">
-        <span class="big">&le; 0,4<i>%</i></span>
-        <p>Zuurgraad. De EU-grens voor extra vergine is 0,8%; hoe lager, hoe verser de olijf bij de pers.</p>
-      </div>
-      <div class="proof-cell">
-        <span class="big">0 <i>dagen</i></span>
-        <p>Tussen pluk en persing. Geoogst in de ochtend, dezelfde dag koud geperst in de eigen molen.</p>
-      </div>
-      <div class="proof-cell">
-        <span class="big">&lt; 27<i>&deg;C</i></span>
-        <p>Koude extractie met korte kneedtijd, zodat aroma en polyfenolen niet verloren gaan.</p>
-      </div>
-      <div class="proof-cell">
-        <span class="big">1 <i>landgoed</i></span>
-        <p>Hacienda San Miguel, Alhama de Murcia. Gecertificeerde ge&iuml;ntegreerde teelt, eigen laboratorium.</p>
+      <div>
+        <span class="lock">Alleen met uitnodiging</span>
+        <form class="order-form" data-product="duo">
+          <input name="name_" placeholder="Naam" autocomplete="name" required>
+          <input name="email" type="email" placeholder="E-mailadres" autocomplete="email" required>
+          <input name="address" placeholder="Adres (straat, nr, postcode, plaats)" autocomplete="street-address" required>
+          <button class="btn" type="submit">Reserveer en betaal</button>
+          <p class="order-err"></p>
+        </form>
       </div>
     </div>
-    <p class="proof-foot reveal">Elke batch wordt geanalyseerd in het eigen laboratorium van het landgoed en valt onder het kwaliteitskeurmerk van de regio Murcia. <strong>Bij elke bestelling krijg je de oogst- en persdatum van jouw batch.</strong></p>
+
+    <p class="order-note reveal">Reserveren is meteen betalen (iDEAL). Wij bestellen bij het landgoed precies wat gereserveerd is en leveren binnen een paar weken na de persing. Komt de persing niet, dan krijg je je geld terug. Geen uitnodiging? <a href="#oogstbericht">De wachtlijst is de achterdeur.</a></p>
   </div>
 </section>
-
-<div class="photoband">
-  <img src="assets/boomgaard.jpg" alt="Bloeiende olijfbomen in de boomgaard" width="1600" height="645" loading="lazy">
-  <span class="photoband-cap">De boomgaard in bloei, aan de rand van natuurpark Sierra Espu&ntilde;a</span>
-</div>
 
 <section class="signup" id="oogstbericht">
   <div class="wrap">
@@ -535,57 +171,23 @@
   </div>
 </section>
 
-<section class="b2b">
+<section class="teaser">
   <div class="wrap">
-    <div class="b2b-grid">
-      <div>
-        <span class="label reveal">Horeca &amp; inkoop</span>
-        <h2 class="reveal">Dezelfde persing, in <em>elk</em> formaat.</h2>
-        <p class="b2b-text reveal">Voor restaurants, delicatessenwinkels en kantoren leveren we rechtstreeks van het landgoed, gebotteld op bestelling, zonder uitnodiging. Vraag de prijslijst met staffels aan; een sample sturen we mee.</p>
-        <ul class="b2b-formats reveal">
-          <li><span>Glazen fles</span><span>25 en 50 cl, voor tafel en schap</span></li>
-          <li><span>PET-fles</span><span>50 cl en 1 liter</span></li>
-          <li><span>Karaf</span><span>5 liter, het keukenformaat</span></li>
-          <li><span>Blik</span><span>1 en 5 liter, lithografisch bedrukt</span></li>
-        </ul>
-        <a class="cta-mini reveal" href="mailto:zakelijk@voorbeeld.nl?subject=Prijslijst%20en%20sample">Vraag de prijslijst aan</a>
-      </div>
-      <div class="b2b-photos reveal">
-        <figure class="packshot">
-          <img src="assets/assortiment.jpg" alt="Het assortiment van het landgoed: blikken van 5 en 1 liter en de karaf van 5 liter" width="900" height="659" loading="lazy">
-          <figcaption>Blikken en de 5-literkaraf</figcaption>
-        </figure>
-        <figure class="packshot">
-          <img src="assets/flessen.jpg" alt="Glazen flessen van de Constitucion-topselectie met geschenkkoker" width="660" height="563" loading="lazy">
-          <figcaption>Glazen flessen en geschenkkoker</figcaption>
-        </figure>
-      </div>
-    </div>
+    <p><strong>Horeca of inkoop?</strong> Dezelfde persing in elk formaat, van 25 cl tot 5 liter, zonder uitnodiging.</p>
+    <a class="cta-mini" href="zakelijk.html">Bekijk zakelijk</a>
   </div>
 </section>
 
 <footer>
-  <a class="logo" href="#top">BRON<span>.</span></a>
-  <p>Olijfolie van &eacute;&eacute;n landgoed · Alhama de Murcia, Spanje</p>
-  <p>&copy; 2026</p>
+  <a class="logo" href="index.html">BRON<span>.</span></a>
+  <div class="footer-nav">
+    <a href="verhaal.html">Het landgoed</a>
+    <a href="zakelijk.html">Zakelijk</a>
+    <a href="#oogstbericht">Wachtlijst</a>
+  </div>
+  <p>Olijfolie van &eacute;&eacute;n landgoed · Alhama de Murcia, Spanje · &copy; 2026</p>
 </footer>
 
-<script>
-  // scroll reveal
-  const io = new IntersectionObserver((entries) => {
-    for (const e of entries) if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // waitlist form: koppel hier je e-mailprovider (Formspree / MailerLite / Supabase) aan
-  document.getElementById('waitlist').addEventListener('submit', (ev) => {
-    ev.preventDefault();
-    // TODO: POST naar je e-mailprovider endpoint
-    ev.target.style.display = 'none';
-    document.querySelector('.form-note').style.display = 'none';
-    document.getElementById('form-ok').style.display = 'block';
-  });
-</script>
-
+<script src="assets/site.js"></script>
 </body>
 </html>

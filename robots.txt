@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /bedankt.html
+
+Sitemap: https://VERVANG-DOOR-DOMEIN/sitemap.xml
